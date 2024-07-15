@@ -1,12 +1,9 @@
 import "./App.css";
+import Main from "./pages/Main";
 
 function App() {
   return (
-    <>
-      <div className="h-screen w-screen bg-gray-900 text-gray-100 flex justify-center items-center">
-        <h1 className="text-3xl font-semibold">DevInterview</h1>
-      </div>
-    </>
+    <Main />
   );
 }
 
