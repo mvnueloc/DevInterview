@@ -1,3 +1,4 @@
+import Header from "../components/common/Header"
 import Informacion from "../components/main/Informacion";
 import Modelo from "../components/main/Modelo";
 import Preview from "../components/main/Preview";
@@ -7,7 +8,8 @@ import "./styles/index.css";
 function Main() {
   return (
     <div className="bg-custom-degrad bg-dot">
-      <main className="relative font-jetbrains py-8 lg:py-0 lg:h-screen w-screen text-gray-100 flex justify-center items-center">
+      <Header />
+      <main className="relative font-jetbrains py-8 lg:py-0 lg:h-screen w-full text-gray-100 flex justify-center items-center">
         <div>
           <section className="flex justify-center items-center">
             <div className="flex flex-col lg:flex-row lg:space-x-16 space-y-16 lg:space-y-0">
