@@ -31,11 +31,11 @@ function Header() {
                             </div>
                         </a>
                         <div
-                        className="md:hidden flex flex-col ml-4 px-2 py-3  rounded-md cursor-pointer"
+                        className="md:hidden flex flex-col  px-2 py-3   rounded-md cursor-pointer"
                         onClick={() => setIsOpen(!isOpen)}
                         >
                             <div className="w-4 h-0.5 bg-gray-100  mb-1"></div>
-                            <div className="w-2 h-0.5 bg-gray-100  mb-1"></div>
+                            <div className={`${isOpen ? "w-4" : "w-3"} h-0.5 bg-gray-100  mb-1`}></div>
                             <div className="w-4 h-0.5 bg-gray-100 "></div>
                         </div>
                     </div>
