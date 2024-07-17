@@ -1,4 +1,5 @@
 import Header from "../components/common/Header"
+import Footer from "../components/common/Footer";
 import Informacion from "../components/main/Informacion";
 import Modelo from "../components/main/Modelo";
 import Preview from "../components/main/Preview";
@@ -23,6 +24,7 @@ function Main() {
           </section>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
