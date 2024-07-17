@@ -1,9 +1,13 @@
 import "./App.css";
 import Main from "./pages/Main";
+import Header from "./components/common/Header";
 
 function App() {
   return (
-    <Main />
+    <div>
+      <Header />
+      <Main />
+    </div>
   );
 }
 
