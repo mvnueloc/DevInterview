@@ -1,13 +1,16 @@
 import "./App.css";
-import Main from "./pages/Main";
-import Header from "./components/common/Header";
+import { BrowserRouter } from "react-router-dom";
+import { Suspense } from "react";
+import AppRouter from "./Router";
+import Loader from "./components/common/Loader";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Main />
-    </div>
+    <BrowserRouter>
+      <Suspense fallback={<Loader />}>
+        <AppRouter />
+      </Suspense>
+    </BrowserRouter>
   );
 }
 

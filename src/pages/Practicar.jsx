@@ -1,18 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Dificultad from "../components/Practicar/Dificultad";
 import CardCategoria from "../components/Practicar/CardCategoria";
+import "./styles/index.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const Practicar = () => {
   const [selectedDificultad, setSelectedDificultad] = useState(null);
   const [selectedCategoria, setSelectedCategoria] = useState(null);
+  const navegate = useNavigate();
 
-  selectedCategoria != null
-    ? console.log(
-        `${selectedCategoria
+  const url =
+    selectedCategoria != null
+      ? `preguntas/${selectedCategoria
           .toLowerCase()
           .replace(/\s+/g, "-")}/${selectedDificultad.toLowerCase()}`
-      )
-    : undefined;
+      : "";
+
+  useEffect(() => {
+    if (selectedCategoria && selectedDificultad) {
+      navegate(url);
+    }
+  }, [selectedCategoria, selectedDificultad]);
 
   const front_end = ["react", "angular", "html", "css", "javaScript"];
   const back_end = ["node", "docker", "python", "git", "sql"];
@@ -72,6 +80,13 @@ const Practicar = () => {
               onSelect={() => setSelectedCategoria("Software Developer")}
             />
           </div>
+          {selectedCategoria && selectedDificultad && (
+            <div className="mt-6 flex justify-center">
+              <Link to={`/${url}`} className="btn btn-primary">
+                Ir a la categoría y dificultad seleccionada
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </div>
