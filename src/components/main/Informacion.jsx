@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Informacion = () => {
   return (
     <div className="flex justify-center">
@@ -9,15 +10,16 @@ const Informacion = () => {
         </p>
         <div className="flex justify-between mt-4 w-full space-x-4">
           <a
-            href="#"
+            href="https://github.com/mvnueloc/DevInterview/"
+            target="_blank"
             className="bg-blue-600 text-white rounded-md px-4 py-2 w-1/2 text-center">
-            Deploy
+            Respositorio
           </a>
-          <a
-            href="#"
+          <Link
+            to="/practicar"
             className="bg-gray-100 text-black rounded-md px-4 py-2 w-1/2 text-center">
-            View Demo
-          </a>
+            Ver Demo
+          </Link>
         </div>
         <div className="flex justify-between mt-4">
           <p className="font-semibold">Libreria</p>
