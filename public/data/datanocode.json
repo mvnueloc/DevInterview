@@ -11,180 +11,189 @@
         "question": "¿Qué es un bucle en programación y para qué se utiliza?"
       },
       {
-        "question": "¿Qué es una estructura de datos y por qué es importante?"
+        "question": "¿Puedes explicar qué es una estructura de datos y dar algunos ejemplos comunes?"
       },
       {
         "question": "¿Qué es una función o método en programación?"
       },
       {
-        "question": "¿Qué es una API y para qué se utiliza?"
+        "question": "¿Qué es una API (Interfaz de Programación de Aplicaciones) y cuáles son sus principales usos en el desarrollo de software?"
       },
       {
-        "question": "¿Qué es la depuración de código y por qué es importante?"
+        "question": "¿Qué es un sistema de control de versiones y por qué es importante en el desarrollo colaborativo de software?"
       },
       {
-        "question": "¿Qué es un sistema de control de versiones y por qué se utiliza?"
-      },
-      {
-        "question": "¿Qué es un algoritmo y cómo se define?"
+        "question": "¿Qué es un algoritmo en programación?"
       },
       {
         "question": "¿Cuál es la diferencia entre compilación e interpretación en lenguajes de programación?"
       },
       {
-        "question": "¿Qué es una excepción en programación y cómo se maneja?"
+        "question": "¿Qué es una excepción en programación?"
       },
       {
         "question": "¿Qué es un objeto en programación orientada a objetos?"
       },
       {
-        "question": "¿Qué es la modularidad en el desarrollo de software y por qué es importante?"
-      },
-      {
-        "question": "¿Qué es la documentación del código y por qué es necesaria?"
+        "question": "¿Qué es la modularidad en el desarrollo de software?"
       },
       {
         "question": "¿Qué es el ciclo de vida del software?"
       },
       {
-        "question": "¿Qué es una prueba unitaria (unit test) y por qué es importante?"
+        "question": "¿Qué es un diagrama de flujo?"
       },
       {
-        "question": "¿Qué es un diagrama de flujo y cómo se utiliza en el desarrollo de software?"
+        "question": "¿Qué es una transacción en bases de datos y por qué es importante?"
       },
       {
-        "question": "¿Qué es la abstracción en programación orientada a objetos?"
+        "question": "¿Qué es un entorno de desarrollo integrado (IDE)?"
       },
       {
-        "question": "¿Qué es una base de datos y para qué se utiliza?"
+        "question": "Explica la diferencia entre una pila y una cola."
       },
       {
-        "question": "¿Qué es un entorno de desarrollo integrado (IDE) y cuáles son sus ventajas?"
+        "question": "¿Qué es la recursividad y cómo se utiliza en programación?"
+      },
+      {
+        "question": "¿Qué es la complejidad computacional?"
+      },
+      {
+        "question": "¿Qué es la herencia en programación orientada a objetos?"
+      },
+      {
+        "question": "¿Qué es la sobrecarga de métodos y cómo se implementa?"
+      },
+      {
+        "question": "¿Cuál es el propósito de una tabla hash y cómo funciona?"
       }
     ],
 
     "junior": [
       {
+        "question": "¿Cómo le explicarías las API a un miembro del equipo no técnico?"
+      },
+      {
+        "question": "¿Cómo abordas los problemas en tu código?"
+      },
+      {
         "question": "¿Qué es una variable en programación?"
       },
       {
-        "question": "¿Cuál es la diferencia entre una variable global y una variable local?"
+        "question": "¿Cómo Abordas un Problema de Codificación?"
       },
       {
-        "question": "¿Qué es un bucle en programación y para qué se utiliza?"
+        "question": "¿Qué Estrategias Utilizas para Optimizar el Rendimiento del Código?"
       },
       {
-        "question": "¿Qué es una estructura de datos y por qué es importante?"
+        "question": "¿Cómo explicaría qué es un programa informático y cómo se lo describiría a alguien con palabras no técnicas?"
       },
       {
-        "question": "¿Qué es una función o método en programación?"
+        "question": "¿Puede mencionar las etapas esenciales del proceso de desarrollo de software?"
       },
       {
-        "question": "¿Qué es una API y para qué se utiliza?"
+        "question": "Explique algunos de los modelos del SDLC."
       },
       {
-        "question": "¿Qué es la depuración de código y por qué es importante?"
+        "question": "¿Qué es la escalabilidad horizontal y vertical?"
       },
       {
-        "question": "¿Qué es un sistema de control de versiones y por qué se utiliza?"
+        "question": "¿Puede explicar qué es la verificación en el desarrollo de software?"
       },
       {
-        "question": "¿Qué es un algoritmo y cómo se define?"
+        "question": "Describa la modularización."
       },
       {
-        "question": "¿Cuál es la diferencia entre compilación e interpretación en lenguajes de programación?"
+        "question": "¿Qué es la depuración de código?"
       },
       {
-        "question": "¿Qué es una excepción en programación y cómo se maneja?"
-      },
-      {
-        "question": "¿Qué es un objeto en programación orientada a objetos?"
-      },
-      {
-        "question": "¿Qué es la modularidad en el desarrollo de software y por qué es importante?"
-      },
-      {
-        "question": "¿Qué es la documentación del código y por qué es necesaria?"
-      },
-      {
-        "question": "¿Qué es el ciclo de vida del software?"
+        "question": "¿Por qué es necesaria la documentación del código?"
       },
       {
         "question": "¿Qué es una prueba unitaria (unit test) y por qué es importante?"
       },
       {
-        "question": "¿Qué es un diagrama de flujo y cómo se utiliza en el desarrollo de software?"
-      },
-      {
         "question": "¿Qué es la abstracción en programación orientada a objetos?"
       },
       {
-        "question": "¿Qué es una base de datos y para qué se utiliza?"
+        "question": "¿Qué es CASE (Computer-Aided Software Engineering)?"
       },
       {
-        "question": "¿Qué es un entorno de desarrollo integrado (IDE) y cuáles son sus ventajas?"
+        "question": "¿Qué se entiende por alcance del software?"
+      },
+      {
+        "question": "¿Qué es la programación orientada a objetos?"
       }
     ],
     "senior": [
       {
-        "question": "¿Cómo implementarías un patrón de diseño Singleton en tu lenguaje preferido?"
+        "question": "¿Qué es la programación orientada a eventos?"
       },
       {
-        "question": "¿Cuáles son las ventajas y desventajas de la arquitectura de microservicios en comparación con la arquitectura monolítica?"
+        "question": "¿Dime la diferencia entre un EXE y una DLL?"
       },
       {
-        "question": "Explica el patrón de diseño MVC (Modelo-Vista-Controlador) y proporciona ejemplos de cómo lo has aplicado en proyectos anteriores."
+        "question": "Describa las diferencias principales entre hilos y procesos."
       },
       {
-        "question": "¿Cómo aseguras las aplicaciones web contra vulnerabilidades comunes como XSS, CSRF y SQL injection?"
+        "question": "¿Qué son las herramientas CASE?"
       },
       {
-        "question": "Describe cómo optimizas el rendimiento de una aplicación web tanto en el frontend como en el backend."
+        "question": "¿Qué es la programación estructurada?"
       },
       {
-        "question": "¿Cómo gestionas el despliegue de aplicaciones en entornos de producción? ¿Qué consideraciones tienes en cuenta para la escalabilidad horizontal y vertical?"
+        "question": "¿Qué es el diseño estructurado?"
       },
       {
-        "question": "Explica cómo has implementado CI/CD en proyectos anteriores. ¿Qué herramientas y prácticas utilizas para asegurar la calidad del código y automatizar su despliegue?"
+        "question": "¿Qué es la programación declarativa?"
       },
       {
-        "question": "¿Qué tecnologías emergentes o tendencias en desarrollo fullstack encuentras más interesantes o relevantes en la actualidad?"
+        "question": "¿Puede describir la programación funcional?"
       },
       {
-        "question": "Describe tu experiencia con bases de datos NoSQL y SQL. ¿Cómo decides qué tipo de base de datos utilizar en diferentes situaciones?"
+        "question": "Describe la diferencia entre programación orientada a interfaces, orientada a objetos y orientada a aspectos."
+      },
+      {
+        "question": "¿Cómo decides qué tipo de base de datos utilizar en diferentes situaciones para NoSQL y SQL?"
+      },
+      {
+        "question": "¿Qué tipo de datos se pasan a través de encabezados HTTP?"
+      },
+      {
+        "question": "¿Cuándo usas polimorfismo?"
+      },
+      {
+        "question": "¿Dame diferencias entre etiquetas y ramas?"
       },
       {
         "question": "¿Has liderado equipos técnicos o proyectos complejos? Describe tu rol y las estrategias que utilizaste para asegurar el éxito del proyecto."
       },
       {
-        "question": "¿Puedes compartir un ejemplo de un problema técnico complejo que hayas resuelto recientemente en un proyecto? Detalla el proceso que seguiste y los resultados obtenidos."
-      },
-      {
-        "question": "¿Cómo manejas la integración de sistemas heredados con nuevas tecnologías?"
-      },
-      {
-        "question": "Explica cómo utilizas los principios de SOLID en el desarrollo de software."
-      },
-      {
-        "question": "¿Cómo gestionas la deuda técnica en un proyecto a largo plazo?"
-      },
-      {
-        "question": "Describe tu experiencia con metodologías ágiles como Scrum o Kanban."
-      },
-      {
-        "question": "¿Cómo te mantienes actualizado con las últimas tendencias y tecnologías en desarrollo de software?"
-      },
-      {
-        "question": "¿Cómo abordas el diseño de una arquitectura escalable para una nueva aplicación?"
+        "question": "Describe que es Scrum o Kanban."
       },
       {
         "question": "¿Qué prácticas de seguridad implementas en el ciclo de vida del desarrollo de software (SDLC)?"
       },
       {
-        "question": "¿Cómo gestionas las dependencias en un proyecto de software complejo?"
+        "question": "¿Cómo gestionas las dependencias en un proyecto de software?"
       },
       {
-        "question": "Describe un caso en el que hayas tenido que refactorizar una gran parte de una aplicación. ¿Cuál fue el proceso y qué resultados obtuviste?"
+        "question": "Cuáles son las limitaciones de la Programación Orientada a Objetos (OOP)?"
+      },
+      {
+        "question": "¿Cuál es la diferencia entre herencia prototipo y herencia clásica en la Programación Orientada a Objetos?"
+      },
+      {
+        "question": "¿En qué casos es mejor una arquitectura de microservicios que una monolítica?"
+      },
+      {
+        "question": "¿Cómo evitar la exposición de datos sensibles?"
+      },
+      {
+        "question": "Nombra y explica los roles del Scrum"
+      },
+      {
+        "question": "¿Qué entiendes por éxito de un proyecto?"
       }
     ]
   },

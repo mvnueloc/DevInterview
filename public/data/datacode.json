@@ -3,13 +3,7 @@
     "software_developer": {
       "intern": [ 
         {
-          "question": "Escribe una función que reciba un número y devuelva 'True' si es par y 'False' si es impar."
-        },
-        {
-          "question": "Escribe un bucle que imprima los números del 1 al 10."
-        },
-        {
-          "question": "Crea una lista con los números del 1 al 5 y multiplícalos por 2 utilizando un bucle."
+          "question": "Escribe una función para determinar si una cadena es un palíndromo."
         },
         {
           "question": "Define una clase 'Persona' con atributos 'nombre' y 'edad'. Crea un método que imprima los detalles de la persona."
@@ -18,174 +12,34 @@
           "question": "Escribe una función recursiva que calcule el factorial de un número."
         },
         {
-          "question": "Crea un diccionario con tres pares clave-valor e imprime todas las claves."
+          "question": "Dado un array de enteros nums y un entero target, necesitas encontrar dos números en nums que sumen target. Debes devolver sus índices como un array de dos elementos [index1, index2]. \n\n Puedes asumir que cada entrada tendrá exactamente una solución y no puedes usar el mismo elemento dos veces. El orden de los índices en la respuesta no importa. \n\n Ejemplo: \n Input: nums = [2, 7, 11, 15], target = 9 \nOutput: [0, 1]."
         },
         {
-          "question": "Escribe un programa que lea un archivo de texto y cuente el número de palabras."
+          "question": "Implementa una función que reciba una cadena y devuelva un diccionario o un map con la frecuencia de cada carácter en la cadena."
         },
         {
-          "question": "Define una clase base 'Animal' y una clase derivada 'Perro'. La clase 'Perro' debe tener un método que imprima 'Guau'."
-        },
-        {
-          "question": "Escribe una función que reciba una lista de números y devuelva la lista ordenada en orden ascendente."
-        },
-        {
-          "question": "Crea un programa que solicite al usuario ingresar su nombre y luego imprima 'Hola, [nombre]'."
-        },
-        {
-          "question": "Escribe una función que tome una cadena y devuelva la cadena invertida."
-        },
-        {
-          "question": "Crea una función que tome una lista de números y devuelva la suma de todos los números."
-        },
-        {
-          "question": "Define una clase 'Coche' con atributos 'marca' y 'modelo'. Añade un método para cambiar el modelo del coche."
-        },
-        {
-          "question": "Escribe un programa que encuentre el número más grande en una lista de números."
-        },
-        {
-          "question": "Crea una función que reciba dos cadenas y devuelva 'True' si son anagramas, 'False' en caso contrario."
-        },
-        {
-          "question": "Escribe un programa que utilice un bucle para imprimir la tabla de multiplicar del 5."
-        },
-        {
-          "question": "Crea una lista de números y utiliza una comprensión de listas para crear una nueva lista con los números al cuadrado."
-        },
-        {
-          "question": "Define una clase 'Empleado' con un atributo 'salario'. Añade un método para incrementar el salario en un porcentaje dado."
-        },
-        {
-          "question": "Escribe una función que tome una lista de números y devuelva una nueva lista con solo los números pares."
-        },
-        {
-          "question": "Crea un programa que genere números aleatorios entre 1 y 100 hasta que se genere el número 50."
+          "question": "Dada una lista enlazada, invierte el orden de sus nodos. La lista enlazada es una estructura de datos en la que cada nodo contiene un valor y una referencia al siguiente nodo en la secuencia. El objetivo es modificar la lista para que el último nodo se convierta en el primer nodo, el penúltimo nodo se convierta en el segundo, y así sucesivamente.\n\n# Nodo:\n#     valor: entero\n#     siguiente: Nodo (o nulo)\n#\n # Constructores:\n#     Nodo()\n#         valor = 0\n#         siguiente = nulo\n#         \n#     Nodo(valor)\n#         valor = valor dado\n#         siguiente = nulo\n#         \n#     Nodo(valor, siguiente)\n#         valor = valor dado\n#         siguiente = siguiente nodo dado\n\nEjemplo: \nInput: head = [1, 2, 3, 4, 5]\nOutput: [5, 4, 3, 2, 1]"
         }
       ],
       "junior": [
         {
-          "question": "Escribe una función que reciba una lista de números y devuelva el número máximo de la lista."
-        },
-        {
-          "question": "Implementa un algoritmo que determine si una cadena de texto es un palíndromo."
+          "question": "Dado un array de enteros únicos candidates y un entero target, devuelve todas las combinaciones únicas de candidates donde la suma de los números es igual a target. Los números en candidates pueden ser usados un número ilimitado de veces en la combinación.\n\n Las combinaciones pueden ser devueltas en cualquier orden. \n\n Ejemplo: \n Input: candidates = [2, 3, 6, 7], target = 7 \nOutput: [[2, 2, 3], [7]] \n\n Input: candidates = [2, 3, 5], target = 8 \nOutput: [[2, 2, 2, 2], [2, 3, 3], [3, 5]]."
         },
         {
           "question": "Escribe una clase 'Rectángulo' con atributos 'ancho' y 'alto', y métodos para calcular el área y el perímetro."
         },
         {
+          "question": "Define una clase base 'Animal' y una clase derivada 'Perro'. La clase 'Perro' debe tener un método que imprima 'Guau'."
+        },
+        {
           "question": "Crea una función que reciba un número n y devuelva una lista con los n primeros números de la secuencia de Fibonacci."
         },
         {
-          "question": "Implementa una función que reciba una cadena y devuelva un diccionario con la frecuencia de cada carácter en la cadena."
-        },
-        {
-          "question": "Escribe un programa que lea un archivo CSV y convierta su contenido en una lista de diccionarios."
-        },
-        {
           "question": "Crea una clase 'Banco' con métodos para depositar y retirar dinero, y consultar el saldo."
-        },
-        {
-          "question": "Implementa una función que reciba una lista de números y devuelva una nueva lista con los números duplicados eliminados."
-        },
-        {
-          "question": "Escribe una función que encuentre el segundo número más grande en una lista de números."
-        },
-        {
-          "question": "Crea una clase 'Empleado' con atributos 'nombre', 'puesto' y 'salario'. Añade un método para aplicar un aumento salarial."
-        },
-        {
-          "question": "Implementa un algoritmo de ordenamiento por burbuja (bubble sort) para una lista de números."
-        },
-        {
-          "question": "Escribe una función que reciba una lista de palabras y devuelva la palabra más larga."
-        },
-        {
-          "question": "Crea un programa que lea una lista de enteros y devuelva un diccionario con la cantidad de números pares e impares."
-        },
-        {
-          "question": "Implementa una función que reciba una lista de números y devuelva la mediana."
-        },
-        {
-          "question": "Escribe un programa que conecte a una base de datos SQLite, cree una tabla y añada algunos registros."
-        },
-        {
-          "question": "Crea una función que reciba dos matrices (listas de listas) y devuelva su producto (multiplicación de matrices)."
-        },
-        {
-          "question": "Escribe una clase 'Círculo' con un atributo 'radio' y métodos para calcular el área y la circunferencia."
-        },
-        {
-          "question": "Implementa una función que reciba una lista de números y devuelva el promedio de la lista."
-        },
-        {
-          "question": "Crea un programa que realice una solicitud HTTP GET a una API y procese la respuesta JSON."
-        },
-        {
-          "question": "Escribe una función que reciba una lista de diccionarios y ordene la lista según un campo específico."
         }
       ],
       "senior": [
-        {
-          "question": "Implementa una función que encuentre el máximo común divisor (MCD) de dos números usando el algoritmo de Euclides."
-        },
-        {
-          "question": "Escribe una función que implemente el algoritmo de Dijkstra para encontrar el camino más corto en un grafo ponderado."
-        },
-        {
-          "question": "Implementa el algoritmo de ordenamiento por mezcla (merge sort) para una lista de números."
-        },
-        {
-          "question": "Escribe una función que calcule la serie de Fibonacci hasta el enésimo término de manera iterativa."
-        },
-        {
-          "question": "Implementa una función que invierta una cadena de texto."
-        },
-        {
-          "question": "Escribe una función que verifique si una cadena es un anagrama de otra."
-        },
-        {
-          "question": "Implementa una función que encuentre el elemento más frecuente en una lista."
-        },
-        {
-          "question": "Escribe una función que realice una búsqueda binaria en una lista ordenada."
-        },
-        {
-          "question": "Implementa una función que calcule el factorial de un número de manera recursiva."
-        },
-        {
-          "question": "Escribe una función que elimine los duplicados de una lista."
-        },
-        {
-          "question": "Implementa una función que encuentre el k-ésimo elemento más grande en una lista."
-        },
-        {
-          "question": "Escribe una función que realice la intersección de dos listas."
-        },
-        {
-          "question": "Implementa una función que calcule la suma de una lista de números utilizando recursión."
-        },
-        {
-          "question": "Escribe una función que determine si una lista está ordenada en orden ascendente."
-        },
-        {
-          "question": "Implementa una función que comprima una cadena utilizando la codificación run-length."
-        },
-        {
-          "question": "Escribe una función que genere todas las permutaciones de una cadena."
-        },
-        {
-          "question": "Implementa una función que convierta un número decimal en binario."
-        },
-        {
-          "question": "Escribe una función que resuelva una torre de Hanoi con n discos."
-        },
-        {
-          "question": "Implementa una función que encuentre la subcadena más larga sin caracteres repetidos."
-        },
-        {
-          "question": "Escribe una función que calcule la distancia de Hamming entre dos cadenas de igual longitud."
-        }
+        
       ]
     },
     "frontend_developer": {
