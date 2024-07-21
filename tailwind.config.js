@@ -12,7 +12,7 @@ export default {
         //   "linear-gradient(90.21deg, #1A1A1A -5.91%, #232323 111.58%)",
       },
       fontFamily: {
-        jetbrains: ['"JetBrains Mono"', "monospace"],
+        onest: ["Onest", "monospace"],
       },
     },
   },

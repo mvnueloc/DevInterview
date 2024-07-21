@@ -28,7 +28,7 @@ const Practicar = () => {
   const software_developer = ["pytest", "c++", "git", "python", "sql"];
 
   return (
-    <div className="bg-custom-degrad bg-dot font-jetbrains ">
+    <div className="bg-custom-degrad bg-dot font-onest ">
       <div className="relative w-screen lg:h-screen flex justify-center items-center">
         <div className="w-full my-8 lg:my-0">
           <h1 className="text-white text-2xl md:text-3xl font-bold text-center">
