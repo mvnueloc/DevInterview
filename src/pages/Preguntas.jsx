@@ -5,7 +5,7 @@ const Preguntas = () => {
   const { categoria, nivel } = useParams();
 
   return (
-    <div className="bg-custom-degrad bg-dot font-jetbrains ">
+    <div className="bg-custom-degrad bg-dot font-onest ">
       <div className="relative w-screen lg:h-screen flex justify-center items-center">
         <div>
           <h1 className="text-white">Categoria: {categoria}</h1>
