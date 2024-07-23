@@ -14,6 +14,9 @@ export default {
       fontFamily: {
         onest: ["Onest", "monospace"],
       },
+      screens: {
+        base: "990px"
+      }
     },
   },
   plugins: [],
