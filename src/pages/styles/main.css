@@ -1,0 +1,27 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 60px;
+    align-items: center;
+}
+
+.neon-shadow{
+    box-shadow: 0 5px 20px #22598d33;
+
+}
+
+.img-gradient-right {
+    mask-image: linear-gradient(90deg ,black 95%, transparent);
+}
+
+.img-gradient-bottom {
+    mask-image: linear-gradient(black 90%, transparent);
+}
+
+@media (min-width: 990px) {
+    .grid-container{
+        grid-template-columns: 1fr 0.8fr;
+    }
+}
+
