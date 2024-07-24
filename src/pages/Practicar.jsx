@@ -11,9 +11,9 @@ const Practicar = () => {
 
   const url =
     selectedCategoria != null
-      ? `preguntas/${selectedCategoria
+      ? `${selectedCategoria
           .toLowerCase()
-          .replace(/\s+/g, "-")}/${selectedDificultad.toLowerCase()}`
+          .replace(/\s+/g, "_")}/${selectedDificultad.toLowerCase()}`
       : "";
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Practicar = () => {
 
   return (
     <div className="bg-custom-degrad bg-dot font-onest ">
-      <div className="relative w-screen lg:h-screen flex justify-center items-center">
+      <div className="relative w-full lg:h-screen flex justify-center items-center">
         <div className="w-full my-8 lg:my-0">
           <h1 className="text-white text-2xl md:text-3xl font-bold text-center">
             Entrevistas Técnicas.
@@ -42,33 +42,33 @@ const Practicar = () => {
           </div>
           <div className="mt-6 flex justify-center flex-wrap lg:space-x-6 space-x-0 space-y-6 lg:space-y-0">
             <CardCategoria
-              categoria={"Front-End"}
+              categoria={"Frontend"}
               icons={front_end}
               enfoque={
                 "Orientado a desarrolladores especializados en la creación de interfaces de usuario y la experiencia del usuario."
               }
               disabled={!selectedDificultad}
-              onSelect={() => setSelectedCategoria("Front-End")}
+              onSelect={() => setSelectedCategoria("Frontend")}
             />
             <CardCategoria
-              categoria={"Back-End"}
+              categoria={"Backend"}
               icons={back_end}
               enfoque={
                 "Diseñada para desarrolladores que se centran en la lógica del servidor, bases de datos y la integración de sistemas."
               }
               disabled={!selectedDificultad}
-              onSelect={() => setSelectedCategoria("Back-End")}
+              onSelect={() => setSelectedCategoria("Backend")}
             />
           </div>
           <div className="mt-6 flex justify-center flex-wrap lg:space-x-6 space-x-0 space-y-6 lg:space-y-0">
             <CardCategoria
-              categoria={"Full-Stack"}
+              categoria={"Full Stack"}
               icons={full_stack}
               enfoque={
                 "Orientado a desarrolladores que trabajan tanto en el front-end como en el back-end, manejando la arquitectura completa de una aplicación."
               }
               disabled={!selectedDificultad}
-              onSelect={() => setSelectedCategoria("Full-Stack")}
+              onSelect={() => setSelectedCategoria("Full_Stack")}
             />
             <CardCategoria
               categoria={"Software Developer"}
@@ -77,7 +77,7 @@ const Practicar = () => {
                 "Dirigido a desarrolladores con un enfoque general en la creación de software, abarcando múltiples áreas de desarrollo y tecnologías."
               }
               disabled={!selectedDificultad}
-              onSelect={() => setSelectedCategoria("Software Developer")}
+              onSelect={() => setSelectedCategoria("Software_Developer")}
             />
           </div>
           {selectedCategoria && selectedDificultad && (
