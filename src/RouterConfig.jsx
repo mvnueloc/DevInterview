@@ -35,7 +35,7 @@ export const routes = [
     ),
   },
   {
-    path: "practicar/preguntas/:categoria/:nivel",
+    path: "practicar/:categoria/:nivel",
     component: (
       <>
         <Header />
