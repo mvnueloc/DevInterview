@@ -1,6 +1,8 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { useLocalStorage } from "../services/useLocalStorage.js";
+import { useLocalStorage } from "../services/useLocalStorage";
+import { feedbackContext } from "../context/feedbackContext";
+
 
 import Informacion from "../components/Preguntas-tec/Informacion";
 import Input from "../components/Preguntas-tec/Input.jsx";
@@ -12,19 +14,26 @@ const Preguntas = () => {
   const [respuestaDisabled, setRespuestaDisabled] = useState(false);
   const [isFinished, setFinished] = useState(false);
   const [preguntasRespuestas, setPreguntasRespuestas] = useState([]);
+
   const [feedback, setFeedback] = useLocalStorage('feedback', '');
+  const { setLoadingFeedback, setErrorFeedback, setDoneFeedback } = useContext(feedbackContext);
 
   const stringPreguntasRespuestas = 'Proporciona un JSON output válido sin markdown. No quieoro que ponga ```json ni ```. Respeta el esquema de datos. Las preguntas son las siguientes:' + JSON.stringify(preguntasRespuestas);
   
   useEffect(() => {
     if (isFinished) {
-      setFeedback('{ "feedback": "loading" }');
+      setLoadingFeedback();
+      setFeedback('{ "status": "loading" }');
+
       generarRespuesta(stringPreguntasRespuestas).then((response) => {
         if(response !== 'error-response'){
           setFeedback(response);
+          setDoneFeedback();
         }else{
-          setFeedback('{ "error": "error" }');
+          setFeedback('{ "status": "error-response" }');
+          setErrorFeedback();
         }
+
       });
     }
   }, [isFinished]);
