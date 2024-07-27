@@ -12,7 +12,7 @@ const ResumenPreguntas = ({data}) => {
             <div className="md:px-6 py-6 rounded-lg">
                 <h2 className="mb-6 text-3xl font-bold border-b border-white">Preguntas Técnicas</h2>
                 <div className="flex flex-col  gap-3 justify-between w-full base:flex-row base:items-stretch">
-                    <div className="w-full flex flex-col p-6 min-h-64 bg-[#1B1D20] rounded-lg base:w-[60%] ">
+                    <div className="w-full flex flex-col p-6 min-h-64 bg-[#111] rounded-lg base:w-[60%] ">
                         <h3 className="inline-flex text-xl font-semibold items-center">
                             <span className="flex w-2.5 h-2.5 bg-blue-800    rounded-full me-1.5 flex-shrink-0"></span> 
                             Métricas 
@@ -47,7 +47,7 @@ const ResumenPreguntas = ({data}) => {
                             )}
                         </div>
                     </div>
-                    <div className="w-full p-6 bg-[#1B1D20] rounded-lg base:max-w-[40%]">
+                    <div className="w-full p-6 bg-[#111] rounded-lg base:max-w-[40%]">
                         <h3 className="inline-flex text-xl font-semibold items-center">
                             <span className="flex w-2.5 h-2.5 bg-yellow-500 rounded-full me-1.5 flex-shrink-0"></span> 
                             Puntos de mejora
@@ -65,7 +65,7 @@ const ResumenPreguntas = ({data}) => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-3 w-full p-6 bg-[#1B1D20] rounded-lg">
+                <div className="mt-3 w-full p-6 bg-[#111] rounded-lg">
                     <div className="w-full min-h-28">
                         {data["status"] ? (
                             <>

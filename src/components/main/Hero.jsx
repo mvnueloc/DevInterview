@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import Github from '../icons/Github';
 
 const Hero = () => {
@@ -12,8 +11,8 @@ const Hero = () => {
                     Entrena tus habilidades técnicas con IA: responde preguntas y recibe evaluaciones instantáneas.
                 </p>
                 <div className="inline-flex mt-7 gap-4">
-                    <Link to="/practicar" className='bg-[#4545E6] px-6 pt-[14px] pb-3 rounded text-sm font-medium neon-shadow'>Prácticar</Link>
-                    <a href="https://github.com/mvnueloc/DevInterview" className='inline-flex bg-black px-6 pt-[14px] items-center gap-2 pb-3 rounded font-medium text-sm '>
+                    <a href="" className='bg-[#4545E6] px-6 pt-[14px] pb-3 rounded text-sm font-medium neon-shadow'>Prácticar</a>
+                    <a href="" className='inline-flex bg-black px-6 pt-[14px] items-center gap-2 pb-3 rounded font-medium text-sm '>
                         <Github className='size-4'/>
                         Repositorio
                     </a>

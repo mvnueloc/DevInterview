@@ -23,6 +23,7 @@ export const routes = [
       <>
         <Header />
         <Practicar />
+        <Footer />
       </>
     ),
   },

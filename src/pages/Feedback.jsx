@@ -32,7 +32,7 @@ function FeedbackPage() {
     }, [feedback]);
 
     return (
-        <main className="relative font-onest px-4 py-10 base:pb-20 base:pt-24 min-h-screen max-w-dwv text-gray-100">
+        <main className="relative bg-black font-onest px-4 py-10 base:pb-20 base:pt-24 min-h-screen max-w-dwv text-gray-100">
             <section className="hero mx-auto w-full md:w-11/12 2xl:w-[1280px] xl:w-10/12">
                 {!data ? (
                     <div>No hay feedback</div>
