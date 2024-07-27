@@ -1,6 +1,7 @@
 import { React, useEffect, useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import questions from "../../data/preguntasTecnicas";
+import questionsCode from "../../data/preguntasCode";
 
 const Informacion = ({
   numPregunta,
@@ -10,11 +11,31 @@ const Informacion = ({
   setRespuestaDisabled,
   setFinished,
   setPreguntasRespuestas,
+  setNumPreguntasTotales,
 }) => {
-  // <-- Obtener preguntas aleatorias -->
-  const NUMERO_DE_PREGUNTAS = 2;
-
+  // <-- Obtener pregunta codigo aleatoria -->
+  const NUMERO_DE_PREGUNTAS_CODE = 1;
   const { categoria, nivel } = useParams();
+
+  function obtenerPreguntasAleatoriasCode(arrayPreguntas, num) {
+    const cloneArray = [...arrayPreguntas];
+    const sortear = cloneArray.sort(() => 0.5 - Math.random());
+    return sortear.slice(0, num);
+  }
+
+  const arrayPreguntasCode = questionsCode[categoria][nivel];
+
+  const preguntasCode = useMemo(
+    () =>
+      obtenerPreguntasAleatoriasCode(
+        arrayPreguntasCode,
+        NUMERO_DE_PREGUNTAS_CODE
+      ),
+    [arrayPreguntasCode]
+  );
+
+  // <-- Obtener preguntas tecnicas aleatorias -->
+  const NUMERO_DE_PREGUNTAS = 2;
 
   function obtenerPreguntasAleatorias(arrayPreguntas, num) {
     const cloneArray = [...arrayPreguntas];
@@ -29,7 +50,13 @@ const Informacion = ({
     [arrayPreguntas]
   );
 
-  const pregunta = preguntasTecnicas[numPregunta].question;
+  const preguntas = [...preguntasTecnicas, ...preguntasCode];
+
+  useEffect(() => {
+    setNumPreguntasTotales(NUMERO_DE_PREGUNTAS + NUMERO_DE_PREGUNTAS_CODE);
+  }, []);
+
+  const pregunta = preguntas[numPregunta].question;
 
   // <-- Obtener el color segun el nivel -->
   const obtenerColorNivel = (nivel) => {
@@ -59,18 +86,23 @@ const Informacion = ({
       prompt,
     ]);
 
-    if (numPregunta === preguntasTecnicas.length - 1) {
+    if (numPregunta === preguntas.length - 1) {
       setFinished(true);
       return;
     }
-    setPregunta(numPregunta + preguntasTecnicas.length - 1);
+    setPregunta(numPregunta + 1);
     setRespuestaDisabled(false);
     setRespuesta("");
-    setTiempoRestante(TIEMPO_PARA_RESPONDER);
+    {
+      numPregunta < preguntas.length - 2
+        ? setTiempoRestante(TIEMPO_PARA_RESPONDER)
+        : setTiempoRestante(TIEMPO_PARA_RESPONDER_CODE);
+    }
   }
 
   // <-- controlar el tiempo restante -->
   const TIEMPO_PARA_RESPONDER = 120;
+  const TIEMPO_PARA_RESPONDER_CODE = 300;
 
   const [tiempoRestante, setTiempoRestante] = useState(TIEMPO_PARA_RESPONDER);
 
@@ -90,13 +122,16 @@ const Informacion = ({
   }, [numPregunta]);
 
   return (
-    <div className="lg:relative bg-primary border-2 border-gray-100/[0.5] p-4 md:p-8 rounded-lg w-5/6 lg:w-5/12 lg:h-[600px]">
+    <div
+      className={`  ${
+        numPregunta < preguntas.length - 1 ? " lg:h-[650px]" : "lg:h-[309px]"
+      }  lg:relative  bg-primary border-2 border-gray-100/[0.5] p-4 md:p-8 rounded-lg w-full`}>
       <div className="flex justify-between">
         <h2 className="text-gray-100 font-semibold text-xl md:text-2xl">
           Pregunta Tecnica
         </h2>
         <p className="text-gray-100 md:text-lg">
-          {numPregunta + 1}/{NUMERO_DE_PREGUNTAS}
+          {numPregunta + 1}/{preguntas.length}
         </p>
       </div>
       <div className="flex justify-between items-center mt-3">
@@ -107,9 +142,11 @@ const Informacion = ({
         <div className="text-gray-100">Tiempo restante: {tiempoRestante} s</div>
       </div>
 
-      <p className="text-gray-100 mt-8">{pregunta}</p>
+      <div className="h-[100px] overflow-y-auto  ">
+        <p className="text-gray-100 mt-8 ">{pregunta}</p>
+      </div>
 
-      <div className="lg:absolute lg:bottom-9 lg:right-8 flex justify-between md:justify-end mt-8 md:space-x-5">
+      <div className=" lg:absolute lg:bottom-9 lg:right-8 flex justify-between md:justify-end mt-8 md:space-x-5 ">
         <button className="text-white underline">Necesito ayuda</button>
         <button
           className="bg-green-500 text-white rounded-md px-2 py-1"
