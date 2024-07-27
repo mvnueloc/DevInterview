@@ -16,7 +16,7 @@ function Footer () {
                     <a href="https://github.com/mvnueloc">
                         <Github className="size-5"/>
                     </a>
-                    <a href="">
+                    <a href="https://discord.gg/usrKrRw966">
                         <Discord className="size-7"/>
                     </a>
                 </div>
