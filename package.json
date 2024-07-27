@@ -10,12 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@monaco-editor/react": "^4.6.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "@ai-sdk/google": "^0.0.26",
+    "@heroicons/react": "^2.1.5",
+    "@monaco-editor/react": "^4.6.0",
     "ai": "^3.2.20",
-    "dotenv": "^16.4.5"
+    "apexcharts": "^3.51.0",
+    "dotenv": "^16.4.5",
+    "react": "^18.3.1",
+    "react-apexcharts": "^1.4.1",
+    "react-dom": "^18.3.1",
+    "react-loading-skeleton": "^3.4.0",
+    "react-router-dom": "^6.25.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

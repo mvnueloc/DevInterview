@@ -1,12 +1,19 @@
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { Suspense } from "react";
+import AppRouter from "./Router";
+import Loader from "./components/common/Loader";
+import StateFeedback from "./context/StateFeedback";
 
 function App() {
   return (
-    <>
-      <div className="h-screen w-screen bg-gray-900 text-gray-100 flex justify-center items-center">
-        <h1 className="text-3xl font-semibold">DevInterview</h1>
-      </div>
-    </>
+    <StateFeedback>
+      <BrowserRouter>
+        <Suspense fallback={<Loader />}>
+          <AppRouter />
+        </Suspense>
+      </BrowserRouter>
+    </StateFeedback>
   );
 }
 
