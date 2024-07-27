@@ -1,5 +1,9 @@
-import { React, useEffect, useState } from "react";
+import { React, useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { useLocalStorage } from "../services/useLocalStorage";
+import { feedbackContext } from "../context/feedbackContext";
+
+
 import Informacion from "../components/Preguntas-tec/Informacion";
 import Input from "../components/Preguntas-tec/Input.jsx";
 import generarRespuesta from "../services/apiGemini.js";
@@ -15,11 +19,26 @@ const Preguntas = () => {
   const [preguntasRespuestas, setPreguntasRespuestas] = useState([]);
   const [language, setLanguajes] = useState("javascript");
 
+  const [feedback, setFeedback] = useLocalStorage('feedback', '');
+  const { setLoadingFeedback, setErrorFeedback, setDoneFeedback } = useContext(feedbackContext);
+
+  const stringPreguntasRespuestas = 'Proporciona un JSON output válido sin markdown. No quieoro que ponga ```json ni ```. Respeta el esquema de datos. Las preguntas son las siguientes:' + JSON.stringify(preguntasRespuestas);
+  
   useEffect(() => {
     if (isFinished) {
-      console.log(preguntasRespuestas);
-      const stringPreguntasRespuestas = JSON.stringify(preguntasRespuestas);
-      console.log(generarRespuesta(stringPreguntasRespuestas));
+      setLoadingFeedback();
+      setFeedback('{ "status": "loading" }');
+
+      generarRespuesta(stringPreguntasRespuestas).then((response) => {
+        if(response !== 'error-response'){
+          setFeedback(response);
+          setDoneFeedback();
+        }else{
+          setFeedback('{ "status": "error-response" }');
+          setErrorFeedback();
+        }
+
+      });
     }
   }, [isFinished]);
 
@@ -74,7 +93,7 @@ const Preguntas = () => {
             </>
           ) : (
             <div className="text-gray-100 border-2 border-blue-500 px-2 py-1 rounded-md hover:scale-110 transition-all duration-300">
-              <Link to="/">Ver tu Resumen</Link>
+              <Link to="/feedback">Ver tu Resumen</Link>
             </div>
           )}
         </div>
