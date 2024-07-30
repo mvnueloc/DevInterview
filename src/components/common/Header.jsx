@@ -7,7 +7,7 @@ import GithutIcon from "../icons/Github";
 
 const navbarLinks = [
   { label: "Inicio", href: "/", ariaLabel: "Inicio" },
-  { label: "Prácticar", href: "/practicar", ariaLabel: "Practicar" },
+  { label: "Practicar", href: "/practicar", ariaLabel: "Practicar" },
   { label: "Recursos", href: "/recursos", ariaLabel: "Recursos" },
 ];
 
