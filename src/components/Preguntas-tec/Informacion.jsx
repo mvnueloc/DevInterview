@@ -2,6 +2,9 @@ import { React, useEffect, useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import questions from "../../data/preguntasTecnicas";
 import questionsCode from "../../data/preguntasCode";
+import { executeCode } from "../../services/apiCode";
+
+import ProblemIcon from "../icons/Problem";
 
 const Informacion = ({
   numPregunta,
@@ -12,6 +15,10 @@ const Informacion = ({
   setFinished,
   setPreguntasRespuestas,
   setNumPreguntasTotales,
+  setLoading,
+  setOutput,
+  loading,
+  language,
 }) => {
   // <-- Obtener pregunta codigo aleatoria -->
   const NUMERO_DE_PREGUNTAS_CODE = 1;
@@ -62,13 +69,13 @@ const Informacion = ({
   const obtenerColorNivel = (nivel) => {
     switch (nivel) {
       case "intern":
-        return "green-500";
+        return "text-green-500";
       case "junior":
-        return "blue-500";
+        return "text-blue-500";
       case "senior":
-        return "red-500";
+        return "text-red-500";
       default:
-        return "gray-500";
+        return "text-gray-500";
     }
   };
 
@@ -121,38 +128,107 @@ const Informacion = ({
     return () => clearInterval(timer);
   }, [numPregunta]);
 
+  const handleExecuteCode = async () => {
+    setLoading(true);
+    try {
+      const result = await executeCode(language, respuesta);
+      setOutput(result);
+      setLoading(false);
+    } catch (error) {
+      setOutput("Error al ejecutar el código");
+      console.error(error);
+    }
+  };
+
+  const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+  };
+  
+  const calculateProgress = () => {
+    return ((numPregunta + 1) / preguntas.length) * 100;
+  };
+
+
   return (
     <div
-      className={`  ${
-        numPregunta < preguntas.length - 1 ? " lg:h-[650px]" : "lg:h-[309px]"
-      }  lg:relative  bg-primary border-2 border-gray-100/[0.5] p-4 md:p-8 rounded-lg w-full`}>
-      <div className="flex justify-between">
-        <h2 className="text-gray-100 font-semibold text-xl md:text-2xl">
-          Pregunta Tecnica
-        </h2>
-        <p className="text-gray-100 md:text-lg">
-          {numPregunta + 1}/{preguntas.length}
-        </p>
+      className="flex flex-col flex-1 w-full bg-[#1B1D20] rounded-lg base:h-full">
+      <div className="px-2 py-2 inline-flex gap-2 items-center bg-[#28292c] w-full rounded-t-lg">
+        <ProblemIcon className="size-4" />
+        <span className="text-sm font-medium text-gray-200">
+          Entrevista
+        </span>
       </div>
-      <div className="flex justify-between items-center mt-3">
-        <p
-          className={`text-gray-100 px-2 rounded-md border-2 border-${colorNivel}`}>
-          {nivel}
-        </p>
-        <div className="text-gray-100">Tiempo restante: {tiempoRestante} s</div>
-      </div>
+      <div className="min-h-96 p-5 pt-3 flex-1  flex flex-col justify-between">
+        <div className="base:flex-1 base:flex base:flex-col">
+          <div className="flex justify-between">
+            <p
+              className={`${colorNivel} px-3 text-center text-sm py-1 rounded-full bg-[#28292C]`}>
+              {nivel}
+            </p>
+            <div className="text-gray-100 text-sm md:text-base font-medium">Tiempo restante: {formatTime(tiempoRestante)}</div>
+          </div>
+          <div className="w-full text-gray-200 font-medium mt-6">
+          {numPregunta + 1} de {preguntas.length}
+          </div>
+          <div className="max-w-lg base:w-full bg-gray-700 rounded-full h-2.5 mt-2">
+            <div
+              className="bg-blue-500 h-2.5 rounded-full"
+              style={{width: `${calculateProgress()}%`}}
+            ></div>
+          </div>
 
-      <div className="h-[100px] overflow-y-auto  ">
-        <p className="text-gray-100 mt-8 ">{pregunta}</p>
-      </div>
+          <div className="base:flex-1 relative">
+            <div className="hidden inset-0 overflow-hidden base:block base:absolute py-4 pt-7">
+                <div className="overflow-y-auto h-full">
+                  <p className={`
+                  ${
+                    numPregunta < preguntas.length - 1 && "max-w-lg" 
+                  }
+                  text-gray-100 mb-4 text-base base:text-xl mt-8 `}>
+                    {numPregunta + 1}. {pregunta}
+                  </p>
+                </div>
+            </div>
+            <p className={`
+              ${
+                numPregunta < preguntas.length - 1 && "max-w-lg" 
+              }
+              text-gray-100 base:hidden mb-4 text-base base:text-xl mt-8 `}>
+                {numPregunta + 1}. {pregunta}
+              </p>
+          </div>
+        </div>
 
-      <div className=" lg:absolute lg:bottom-9 lg:right-8 flex justify-between md:justify-end mt-8 md:space-x-5 ">
-        <button className="text-white underline">Necesito ayuda</button>
-        <button
-          className="bg-green-500 text-white rounded-md px-2 py-1"
-          onClick={() => handleRespuesta()}>
-          Continuar
-        </button>
+        <div className="flex justify-end gap-6">
+          <button className="text-gray-300 text-sm underline">Necesito ayuda</button>
+          <button
+            className="bg-green-500 text-white text-base rounded-md px-2 py-1"
+            onClick={() => handleRespuesta()}>
+            Continuar
+          </button>
+          {
+            numPregunta >= preguntas.length - 1 && (
+              <button
+                className="px-2 py-1 border-2 border-green-500 text-green-500 rounded-md hover:scale-105 transition-all duration-300"
+                onClick={handleExecuteCode}>
+                {loading ? (
+                  <div className="flex">
+                    Cargando
+                    <div className="flex items-center ml-2">
+                      <div
+                        role="status"
+                        className="inline-block h-3 w-3 mr-2 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"></div>
+                    </div>
+                  </div>
+                ) : (
+                  "Ejecutar"
+                )}
+              </button>
+            )
+          }
+        </div>
       </div>
     </div>
   );

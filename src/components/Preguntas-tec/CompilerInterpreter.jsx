@@ -1,50 +1,36 @@
-import React, { useState } from "react";
-import { executeCode } from "../../services/apiCode";
+import React from "react";
 
-const CompilerInterpreter = ({ respuesta, language }) => {
-  const [output, setOutput] = useState("Haz click en ejecutar");
-  const [loading, setLoading] = useState(false);
-
-  const handleExecuteCode = async () => {
-    setLoading(true);
-    try {
-      const result = await executeCode(language, respuesta);
-      setOutput(result);
-      setLoading(false);
-    } catch (error) {
-      setOutput("Error al ejecutar el código");
-      console.error(error);
-    }
-  };
-
+const CompilerInterpreter = ({output}) => {
   return (
-    <div className="bg-primary border-2 border-gray-100/[0.5] p-4 md:p-8 rounded-lg w-full h-[309px]">
-      <div className="flex justify-between items-center">
-        <h1 className="text-white font-semibold text-xl">Output</h1>
-        <button
-          className="px-2 py-1 border-2 border-green-500 text-green-500 rounded-md hover:scale-105 transition-all duration-300"
-          onClick={handleExecuteCode}>
-          {loading ? (
-            <div className="flex">
-              Cargando
-              <div className="flex items-center ml-2">
-                <div
-                  role="status"
-                  className="inline-block h-3 w-3 mr-2 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"></div>
+    <div className="bg-[#1B1D20] h-full w-full rounded-lg flex flex-col">
+      <div className="px-2 py-2 inline-flex gap-2 items-center bg-[#28292c] w-full rounded-t-lg">
+        <span className="text-sm font-medium text-gray-200">
+          Test de código
+        </span>
+      </div>
+      <div className="flex-1 relative">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="overflow-y-auto h-full">
+            <div className="p-4">
+              {output !== "Haz click en ejecutar" && (
+                <div className="text-gray-200 mb-2 text-sm font-medium">
+                  Salida
+                </div>
+              )}
+              <div className="p-4 rounded-md bg-[#28292c] text-gray-200">
+                <pre className="text-gray-300 text-sm">
+                  {output}
+                </pre>
               </div>
             </div>
-          ) : (
-            "Ejecutar"
-          )}
-        </button>
-      </div>
-
-      {/* <p className="mt-8 text-gray-100/[0.5]">Haz click en "ejecutar"</p> */}
-      <div className="bg-gray-950 mt-8 p-4 h-[175px] overflow-y-auto  rounded-md">
-        <pre className="text-white ">{output}</pre>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
+
+
+
 
 export default CompilerInterpreter;

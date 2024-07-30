@@ -1,23 +1,32 @@
+import TextIcon from "../icons/Text";
 import React from "react";
 
 const Input = ({ respuesta, setRespuesta, respuestaDisabled }) => {
   return (
-    <div className="bg-primary border-2 border-gray-100/[0.5] p-4 md:p-8 rounded-lg w-5/6 lg:w-5/12 lg:h-[650px]">
-      <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-        Respuesta
-      </label>
-      <textarea
-        rows="27"
-        disabled={respuestaDisabled}
-        className={`block p-2.5 w-full text-sm  rounded-lg border  bg-gray-700 border-gray-600 placeholder-gray-400 text-white ${
-          respuestaDisabled ? "opacity-50" : ""
-        } `}
-        placeholder="Escribe tu respuesta aqui..."
-        value={respuesta}
-        onChange={(event) => {
-          //   console.log(event.target.value);
-          setRespuesta(event.target.value);
-        }}></textarea>
+    <div className="rounded-lg w-full base:w-1/2 flex flex-col gap-2.5">
+      <div className="rounded-lg h-full flex flex-col">
+        <div className="px-2 py-2 inline-flex gap-2 items-center bg-[#28292c] w-full rounded-t-lg">
+          <TextIcon className="size-4"/>
+          <label className="text-sm font-medium text-gray-200">
+            Respuesta
+          </label>
+        </div>
+        <textarea
+          disabled={respuestaDisabled}
+          className={`${ respuestaDisabled ? "opacity-50" : ""} 
+          w-full min-h-72 text-base bg-[#1B1D20] text-gray-300 focus:outline-none focus:ring-0 px-5 py-4 flex-1 base:min-h-[36rem] resize-none rounded-b-lg
+          `}
+          placeholder="Escribe tu respuesta aqui..."
+          value={respuesta}
+          onChange={(event) => {
+            setRespuesta(event.target.value);
+          }}></textarea>
+      </div>
+      <div className="base:flex-1 p-4 bg-[#1B1D20] rounded-lg border border-yellow-500 flex items-center min-h-24">
+          <div className="text-white max-w-lg text-sm font-semibold">
+            Esta entrevista es general; en entrevistas reales, las preguntas pueden ser más específicas según el rol.
+          </div>
+      </div>
     </div>
   );
 };
