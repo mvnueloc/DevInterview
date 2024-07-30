@@ -7,9 +7,9 @@ const Dificultad = ({ selectedDificultad, setSelectedDificultad }) => {
 
   return (
     <div className="w-5/6 lg:w-[800px]">
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row md:items-center">
         <p className="text-white text-md">Dificultad: </p>
-        <div className="mt-4 md:mt-0 flex justify-between md:ml-3 md:space-x-4">
+        <div className="mt-4 md:mt-0 flex md:ml-3 space-x-4">
           <button
             onClick={() => handleDificultadClick("Intern")}
             className={`border-2 border-green-500 rounded-md px-4 text-white hover:scale-110 hover:bg-green-500/[0.5] transition duration-300 ${
