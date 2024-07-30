@@ -27,7 +27,7 @@ function Header() {
                 <div className="mr-2">
                   <LogoIcon className="size-10" />
                 </div>
-                <h1 class="text-lg font-bold text-gray-100 hidden md:block md:text-2xl">Dev<span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0E54BC] from-[#3D7BD8]">Interview</span></h1>
+                <h1 className="text-lg font-bold text-gray-100 hidden md:block md:text-2xl">Dev<span className="text-transparent bg-clip-text bg-gradient-to-r to-[#0E54BC] from-[#3D7BD8]">Interview</span></h1>
               </div>
             </Link>
             <div
