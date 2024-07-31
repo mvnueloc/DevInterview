@@ -1,6 +1,6 @@
 import React from "react";
 
-const CompilerInterpreter = ({output}) => {
+const CompilerInterpreter = ({ output }) => {
   return (
     <div className="bg-[#1B1D20] h-full w-full rounded-lg flex flex-col">
       <div className="px-2 py-2 inline-flex gap-2 items-center bg-[#28292c] w-full rounded-t-lg">
@@ -17,10 +17,8 @@ const CompilerInterpreter = ({output}) => {
                   Salida
                 </div>
               )}
-              <div className="p-4 rounded-md bg-[#28292c] text-gray-200">
-                <pre className="text-gray-300 text-sm">
-                  {output}
-                </pre>
+              <div className="p-4 rounded-md bg-[#28292c] text-gray-200 overflow-x-auto">
+                <pre className="text-gray-300 text-sm">{output}</pre>
               </div>
             </div>
           </div>
@@ -29,8 +27,5 @@ const CompilerInterpreter = ({output}) => {
     </div>
   );
 };
-
-
-
 
 export default CompilerInterpreter;
