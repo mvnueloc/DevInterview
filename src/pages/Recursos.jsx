@@ -417,7 +417,7 @@ const Recursos = () => {
 Las habilidades blandas son el pegamento que une a las personas y a los equipos. Son aquellas cualidades personales y sociales que te permiten interactuar de manera efectiva con los demás.</p>
 <p className="mt-4 font-bold text-white">Aqui te dejamos algunos puntos a tomar en cuenta para mejorar tus habilidades blandas: </p>
 <ol class="space-y-4 graltext list-decimal list-inside mt-8 font-regular">
-   <li class="font-semibold">
+   <li class="font-regular">
    Autoconocimiento:
       <ul class="ps-5 mt-2 space-y-3 list-disc list-inside">
          <li class="font-regular">Identifica tus fortalezas y debilidades: Reflexiona sobre situaciones pasadas donde hayas destacado o enfrentado dificultades.</li>
