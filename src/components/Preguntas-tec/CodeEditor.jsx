@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Editor } from "@monaco-editor/react";
 import LanguajesSelector from "./LanguajesSelector";
+import { motion } from "framer-motion";
 
 const CodeEditor = ({
   setRespuesta,
@@ -8,7 +9,10 @@ const CodeEditor = ({
   language,
   setLanguajes,
 }) => {
-  const [cursorPosition, setCursorPosition] = useState({ lineNumber: 1, column: 1 });
+  const [cursorPosition, setCursorPosition] = useState({
+    lineNumber: 1,
+    column: 1,
+  });
   const [value, setValue] = useState("");
   const editorRef = useRef("");
 
@@ -17,7 +21,10 @@ const CodeEditor = ({
     editor.focus();
     editor.onDidChangeCursorPosition(() => {
       const position = editor.getPosition();
-      setCursorPosition({ lineNumber: position.lineNumber, column: position.column });
+      setCursorPosition({
+        lineNumber: position.lineNumber,
+        column: position.column,
+      });
     });
   };
 
@@ -38,14 +45,16 @@ const CodeEditor = ({
   };
 
   return (
-    <div className="bg-[#1B1D20] h-[30rem] flex flex-col text-white base:h-full rounded-lg w-full">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="bg-[#1B1D20] h-[30rem] flex flex-col text-white base:h-full rounded-lg w-full">
       <div className="px-2 py-2 inline-flex gap-2 items-center bg-[#28292c] w-full rounded-t-lg">
-        <label className="text-sm font-medium text-gray-200">
-          Código
-        </label>
+        <label className="text-sm font-medium text-gray-200">Código</label>
       </div>
       <LanguajesSelector language={language} onSelect={onSelect} />
-      <div className="border border-gray-400/40 "/>
+      <div className="border border-gray-400/40 " />
       <div className="flex-1 overflow-hidden rounded-b-lg">
         <Editor
           options={{
@@ -66,9 +75,9 @@ const CodeEditor = ({
         />
       </div>
       <div className="text-sm text-gray-400 py-1 px-2 text-end">
-          Ln: {cursorPosition.lineNumber}, Col: {cursorPosition.column}
+        Ln: {cursorPosition.lineNumber}, Col: {cursorPosition.column}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,8 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const CompilerInterpreter = ({ output }) => {
   return (
-    <div className="bg-[#1B1D20] h-full w-full rounded-lg flex flex-col">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="bg-[#1B1D20] h-full w-full rounded-lg flex flex-col">
       <div className="px-2 py-2 inline-flex gap-2 items-center bg-[#28292c] w-full rounded-t-lg">
         <span className="text-sm font-medium text-gray-200">
           Test de código
@@ -24,7 +29,7 @@ const CompilerInterpreter = ({ output }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
