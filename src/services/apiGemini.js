@@ -2,18 +2,16 @@ import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { generateText } from "ai";
 
 const esquemaDatos = `{
-  "feedback-1": "feedback de la primera respuesta",
-  "feedback-2": "feedback de la segunda respuesta",
+  "pregunta1": "Bien, has comprendido el concepto de sobrecarga de métodos y su utilidad para el mismo método con diferentes tipos o números de argumentos. Sin embargo, sería bueno mencionar que la sobrecarga se resuelve en tiempo de compilación.",
+  "pregunta2": "feedback de la segunda respuesta",
   "weaknessBullets": [
     "...",
-    "...",
-    ...
+    "..."
   ],
   "metrics": [
     {
-      "precision": 80,
-      "claridad": 60,
-      "logica": 80
+      "desempeno": 80,
+      "claridad": 60
     }
   ]
 }`;
@@ -26,9 +24,7 @@ async function generarRespuesta(prompt) {
   try {
     const response = await generateText({
       model: google("models/gemini-1.5-pro-latest"),
-      system: ` Eres un coach de entrevistas y reclutador especialista en tecnología    dispuesto a ayudar para mejorar en las entrevistas técnicas. Tu objetivo es hacer un análisis crítico de las respuestas hacía las preguntas técnicas proporcionadas. Debes de dar un feedback dando la crítica tomando en cuenta los puntos débiles y fuertes que se tienen, además que debes de proporcionar métricas del 1 al 100. 
-      Los criterios para evaluar son: precision: La respuesta es correcta y completa. Completitud: La respuesta debe abordar todos los aspectos relevantes de la pregunta o tema. Lógica: La respuesta es coherente y bien razonada. Claridad: La respuesta es fácil de entender y no tiene ambigüedades. Creatividad: La respuesta demuestra originalidad e ingenio          
-      El esquema de datos se tiene que ver tal que así para las métricas solo las tres que se te dan: ${esquemaDatos}
+      system: ` Eres un coach de entrevistas y reclutador especialista en tecnología dispuesto a ayudar para mejorar en las entrevistas técnicas. Tu objetivo es hacer un análisis de las respuestas hacía las preguntas técnicas proporcionadas. Debes de dar un feedback conciso pero sin perder información, siempre tomando en cuenta los puntos débiles y fuertes que se tienen dando mejoras y cierto crítico en las métricas que debes de proporcionar del 1 al 100. Respeta el esquema de datos, y en caso de no tener respuesta a la pregunta debes regresar una respuesta para la pregunta que sea concisa. El esquema de datos se tiene que ver tal que así, es un ejemplo real: ${esquemaDatos}
       `,
       prompt: prompt,
     });

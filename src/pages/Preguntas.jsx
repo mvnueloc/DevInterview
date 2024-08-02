@@ -7,6 +7,7 @@ import Container from "../components/Preguntas-tec/Container.jsx"
 import Informacion from "../components/Preguntas-tec/Informacion";
 import Input from "../components/Preguntas-tec/Input.jsx";
 import generarRespuesta from "../services/apiGemini.js";
+import generarRespuestaCode from "../services/apiGeminiCode.js";
 import CodeEditor from "../components/Preguntas-tec/CodeEditor.jsx";
 import CompilerInterpreter from "../components/Preguntas-tec/CompilerInterpreter.jsx";
 import Spliter from "../components/Preguntas-tec/Spliter.jsx";
@@ -22,21 +23,54 @@ const Preguntas = () => {
   const [language, setLanguajes] = useState("javascript");
 
   const [feedback, setFeedback] = useLocalStorage('feedback', '');
-  const { setLoadingFeedback, setErrorFeedback, setDoneFeedback } = useContext(feedbackContext);
+  const [feedbackCode, setFeedbackCode] = useLocalStorage('feedbackCode', '');
+  const [readQuestStorage, setQuestStorage] = useLocalStorage('questData', '');
+  const [languageStorage, setLanguageStorage] = useLocalStorage('language', '');
+
+  const { setLoadingFeedback, setErrorFeedback, setDoneFeedback , setLoadingCode, setErrorCode, setDoneCode } = useContext(feedbackContext);
 
   const [output, setOutput] = useState("Haz click en ejecutar");
   const [loading, setLoading] = useState(false);
 
-  const stringPreguntasRespuestas = 'Proporciona un JSON output válido sin markdown. No quieoro que ponga ```json ni ```. Respeta el esquema de datos. Las preguntas son las siguientes:' + JSON.stringify(preguntasRespuestas);
+  const stringPreguntasRespuestas = 'Proporciona un JSON output. No quiero que ponga ```json ni ```. Respeta el esquema de datos. Las preguntas son las siguientes y si alguna no tiene respuesta quiero que me digas una forma concisa y correcta de responder, o da consejos:' + JSON.stringify(preguntasRespuestas);
+  
+  const stringRespuestaCodigo = 'Proporciona un JSON output. No quiero que ponga ```json ni ```. Respeta el esquema de datos. El problema es el siguiente y quiero que me digas consejos para resolver problemas de código siendo conciso:';
   
   useEffect(() => {
     if (isFinished) {
+      setLoadingCode();
+      setFeedbackCode('{ "status": "loading" }');
+
+      console.log(preguntasRespuestas);
+      
+      const promptCode = stringRespuestaCodigo + JSON.stringify(preguntasRespuestas[preguntasRespuestas.length - 1]);
+
+      generarRespuestaCode(promptCode).then((response) => {
+        if(response !== 'error-response'){
+          setLanguageStorage(JSON.stringify(language));
+          setFeedbackCode(response);
+          setQuestStorage(JSON.stringify(preguntasRespuestas));
+          setDoneCode();
+        }else{
+          setFeedbackCode('{ "status": "error-response" }');
+          setErrorCode();
+        }
+
+      });
+    }
+  }, [isFinished]);
+
+  useEffect(() => {
+    if (numPregunta === 2) {
       setLoadingFeedback();
       setFeedback('{ "status": "loading" }');
+
+      console.log(preguntasRespuestas);
 
       generarRespuesta(stringPreguntasRespuestas).then((response) => {
         if(response !== 'error-response'){
           setFeedback(response);
+          setQuestStorage(JSON.stringify(preguntasRespuestas));
           setDoneFeedback();
         }else{
           setFeedback('{ "status": "error-response" }');
@@ -45,7 +79,7 @@ const Preguntas = () => {
 
       });
     }
-  }, [isFinished]);
+  },[numPregunta])
 
   return (
     <Container>
