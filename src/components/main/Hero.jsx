@@ -17,7 +17,7 @@ const Hero = () => {
 
         <h2 className="text-[#C8C8C8] text-xl md:text-2xl font-semibold mt-3">
           Creado para{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r to-[#0E54BC] from-[#6b94d2]">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r to-[#3c74c8] from-[#3872cb]">
             <ReactTyped
               strings={[
                 "Frontend",
