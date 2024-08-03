@@ -4,6 +4,7 @@ import CodeIcon from "../icons/Code";
 import BulletPointIcon from "../icons/BulletPoint";
 import FadeInLeft from "../common/Animations/FadeInLeft";
 import FadeInRight from "../common/Animations/FadeInRight";
+import FQA from "./FQA";
 
 const Instructions = () => {
   return (
@@ -49,9 +50,9 @@ const Instructions = () => {
             </div>
           </article>
         </FadeInLeft>
-        <div className="base:min-w-[60%] base:max-w-[60%] overflow-x-hidden">
+        <div className="base:min-w-[60%] base:max-w-[60%] overflow-x-hidden h-full">
           <FadeInRight>
-            <article className="w-full h-full flex flex-col justify-center p-6 bg-[#2f2f31]/30 rounded-md gap-4">
+            <article className="w-full lg:h-[270px] flex flex-col justify-start p-6 bg-[#2f2f31]/30 rounded-md gap-4">
               <div>
                 <h3 className="inline-flex text-base bg-[#DFDE51]/50 rounded-full px-3 py-1 font-semibold items-center">
                   <Question className="size-5" color="#DFDE51" />
@@ -59,29 +60,7 @@ const Instructions = () => {
                 </h3>
               </div>
               <div className="w-full">
-                <h4 className="text-base font-semibold">
-                  ¿Se necesita una API Key?
-                </h4>
-                <p className="mt-3 text-base">
-                  La aplicación ofrece un número limitado de demos diarias. Al
-                  agotarse, los usuarios deben clonar la aplicación y seguir las
-                  instrucciones del{" "}
-                  <span className="bg-gray-100/[0.3] px-1 rounded-md">
-                    README
-                  </span>{" "}
-                  para continuar usándola.
-                </p>
-              </div>
-              <div className=" w-full">
-                <h4 className="text-base font-semibold">¿Qué modelo usa?</h4>
-                <p className="mt-3 text-base">
-                  Implementado con{" "}
-                  <span className="bg-gray-100/[0.3] px-1 rounded-md">
-                    Gemini-1.5-pro
-                  </span>{" "}
-                  por defecto. Cambia fácilmente a otros modelos con pocas
-                  líneas de código.
-                </p>
+                <FQA />
               </div>
             </article>
           </FadeInRight>
