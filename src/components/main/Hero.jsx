@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Github from "../icons/Github";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
-import IA from "../icons/IA";
 
 const Hero = () => {
   return (
@@ -13,15 +12,12 @@ const Hero = () => {
       className="h-full font-onest grid-container items-center">
       <div className="base:w-full ">
         <h1 className="text-3xl md:text-5xl font-bold mb-0.5">
-          Mejora tus habilidades técnicas con{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r to-[#0E54BC] from-[#3D7BD8]">
-            IA
-          </span>
+          Mejora tus habilidades técnicas con ayuda de Inteligencia Artificial
         </h1>
 
         <h2 className="text-[#C8C8C8] text-xl md:text-2xl font-semibold mt-3">
           Creado para{" "}
-          <span className="">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r to-[#3c74c8] from-[#3872cb]">
             <ReactTyped
               strings={[
                 "Frontend",
