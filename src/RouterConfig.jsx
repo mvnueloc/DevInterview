@@ -4,6 +4,7 @@ import Main from "./pages/Main";
 import Practicar from "./pages/Practicar";
 import Preguntas from "./pages/Preguntas";
 import Feedback from "./pages/Feedback";
+import Recursos from "./pages/Recursos";
 
 export const routes = [
   {
@@ -30,6 +31,7 @@ export const routes = [
     component: (
       <>
         <Header />
+        <Recursos />
         <Footer />
       </>
     ),
