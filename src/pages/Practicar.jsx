@@ -3,6 +3,7 @@ import Dificultad from "../components/Practicar/Dificultad";
 import CardCategoria from "../components/Practicar/CardCategoria";
 import "./styles/index.css";
 import { Link, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import GitIcon from "../components/icons/skills/Git";
 import PythonIcon from "../components/icons/skills/Python";
@@ -38,7 +39,14 @@ const Practicar = () => {
   const front_end = ["html", "css", "javascript", "react", "angular"];
   const back_end = ["node", "docker", "python", "git", "sql", "mongo"];
   const full_stack = ["javascript", "node", "express", "mongo", "sql", "git"];
-  const software_developer = ["cplusplus","python", "git", "sql", "mongo", "docker"];
+  const software_developer = [
+    "cplusplus",
+    "python",
+    "git",
+    "sql",
+    "mongo",
+    "docker",
+  ];
   const softwareDevIcon = {
     git: <GitIcon />,
     python: <PythonIcon />,
@@ -52,10 +60,14 @@ const Practicar = () => {
     docker: <DockerIcon />,
     react: <ReactIcon />,
     angular: <AngularIcon />,
-  } 
+  };
 
   return (
-    <div className="bg-custom-degrad bg-dot font-onest ">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="bg-custom-degrad bg-dot font-onest ">
       <div className="relative w-full lg:h-dvh flex justify-center items-center">
         <div className="w-full my-8 lg:my-0">
           <h1 className="text-white text-2xl md:text-3xl font-bold text-center">
@@ -74,10 +86,14 @@ const Practicar = () => {
                 "Orientado a desarrolladores especializados en la creación de interfaces de usuario y la experiencia del usuario."
               }
               disabled={!selectedDificultad}
-              onSelect={() => setSelectedCategoria("Frontend")}
-            >
-              {front_end.map((icon, index) => 
-                softwareDevIcon[icon] && React.cloneElement(softwareDevIcon[icon], { key: index, className: 'size-7' })
+              onSelect={() => setSelectedCategoria("Frontend")}>
+              {front_end.map(
+                (icon, index) =>
+                  softwareDevIcon[icon] &&
+                  React.cloneElement(softwareDevIcon[icon], {
+                    key: index,
+                    className: "size-7",
+                  })
               )}
             </CardCategoria>
             <CardCategoria
@@ -86,10 +102,14 @@ const Practicar = () => {
                 "Diseñada para desarrolladores que se centran en la lógica del servidor, bases de datos y la integración de sistemas."
               }
               disabled={!selectedDificultad}
-              onSelect={() => setSelectedCategoria("Backend")}
-            >
-              {back_end.map((icon, index) => 
-                softwareDevIcon[icon] && React.cloneElement(softwareDevIcon[icon], { key: index, className: 'size-7' })
+              onSelect={() => setSelectedCategoria("Backend")}>
+              {back_end.map(
+                (icon, index) =>
+                  softwareDevIcon[icon] &&
+                  React.cloneElement(softwareDevIcon[icon], {
+                    key: index,
+                    className: "size-7",
+                  })
               )}
             </CardCategoria>
           </div>
@@ -100,24 +120,32 @@ const Practicar = () => {
                 "Orientado a desarrolladores que trabajan tanto en el front-end como en el back-end, manejando la arquitectura completa de una aplicación."
               }
               disabled={!selectedDificultad}
-              onSelect={() => setSelectedCategoria("Full_Stack")}
-            >
-              {full_stack.map((icon, index) => 
-                softwareDevIcon[icon] && React.cloneElement(softwareDevIcon[icon], { key: index, className: 'size-7' })
+              onSelect={() => setSelectedCategoria("Full_Stack")}>
+              {full_stack.map(
+                (icon, index) =>
+                  softwareDevIcon[icon] &&
+                  React.cloneElement(softwareDevIcon[icon], {
+                    key: index,
+                    className: "size-7",
+                  })
               )}
             </CardCategoria>
             <CardCategoria
               categoria={"Software Developer"}
-              
               enfoque={
                 "Dirigido a desarrolladores con un enfoque general en la creación de software, abarcando múltiples áreas de desarrollo y tecnologías."
               }
               disabled={!selectedDificultad}
               onSelect={() => setSelectedCategoria("Software_Developer")}>
-                {software_developer.map((icon, index) => 
-                  softwareDevIcon[icon] && React.cloneElement(softwareDevIcon[icon], { key: index, className: 'size-7' })
-                )}
-              </CardCategoria>
+              {software_developer.map(
+                (icon, index) =>
+                  softwareDevIcon[icon] &&
+                  React.cloneElement(softwareDevIcon[icon], {
+                    key: index,
+                    className: "size-7",
+                  })
+              )}
+            </CardCategoria>
           </div>
           {selectedCategoria && selectedDificultad && (
             <div className="mt-6 flex justify-center">
@@ -128,7 +156,7 @@ const Practicar = () => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -4,6 +4,7 @@ import questions from "../../data/preguntasTecnicas";
 import questionsCode from "../../data/preguntasCode";
 import { executeCode } from "../../services/apiCode";
 import Play from "../icons/Play";
+import { motion } from "framer-motion";
 
 import ProblemIcon from "../icons/Problem";
 
@@ -152,7 +153,11 @@ const Informacion = ({
   };
 
   return (
-    <div className="flex flex-col flex-1 w-full bg-[#1B1D20] rounded-lg base:h-full">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="flex flex-col flex-1 w-full bg-[#1B1D20] rounded-lg base:h-full">
       <div className="px-2 py-2 inline-flex gap-2 items-center bg-[#28292c] w-full rounded-t-lg">
         <ProblemIcon className="size-4" />
         <span className="text-sm font-medium text-gray-200">Entrevista</span>
@@ -238,7 +243,7 @@ const Informacion = ({
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
