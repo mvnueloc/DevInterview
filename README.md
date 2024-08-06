@@ -1,6 +1,6 @@
 # DevInterview
 
-DevInterview es una aplicación web diseñada para simular **entrevistas técnicas** para programadores, ya sean **frontend, backend o fullstack**. Al finalizar recibirán una evaluación instantánea gracias a la **inteligencia artificial**. 
+DevInterview es una aplicación web diseñada para simular *entrevistas técnicas escritas* dirigidas a desarrolladores *frontend, backend o fullstack. Al finalizar recibirán una evaluación instantánea gracias a la **inteligencia artificial*.
 
 ##  Proyecto desplegado
 
