@@ -3,326 +3,127 @@ const questionsCode = {
     intern: [
       {
         question:
-          "Escribe una función para determinar si una cadena es un palíndromo.",
+          "En Amazon, necesitas calcular el promedio de precios en una lista de productos.\nEscribe una función que calcule el promedio de precios.\nInput:\nLista de precios: [25.99, 15.50, 30.00, 22.75]",
       },
       {
         question:
-          "Define una clase 'Persona' con atributos 'nombre' y 'edad'. Crea un método que imprima los detalles de la persona.",
+          "En Netflix, tienes una lista de películas con sus ratings y quieres ordenar las películas por rating descendente.\nEscribe una función que ordene la lista de películas por rating.\nInput:\nLista de películas: [{'title': 'Movie A', 'rating': 8.5}, {'title': 'Movie B', 'rating': 9.0}, {'title': 'Movie C', 'rating': 7.0}]",
       },
       {
         question:
-          "Escribe una función recursiva que calcule el factorial de un número.",
+          "En Google, necesitas calcular el tiempo total de actividad a partir de una lista de tiempos en minutos.\nEscribe una función que calcule el tiempo total.\nInput:\nLista de tiempos: [60, 45, 30, 15]",
       },
       {
         question:
-          "Dado un array de enteros nums y un entero target, necesitas encontrar dos números en nums que sumen target. Debes devolver sus índices como un array de dos elementos [index1, index2]. \n\n Puedes asumir que cada entrada tendrá exactamente una solución y no puedes usar el mismo elemento dos veces. El orden de los índices en la respuesta no importa. \n\n Ejemplo: \n Input: nums = [2, 7, 11, 15], target = 9 \nOutput: [0, 1].",
+          "En Facebook, necesitas contar el número de comentarios en una publicación.\nEscribe una función que cuente el número de comentarios dados los IDs de los comentarios.\nInput:\nLista de comentarios: [1, 2, 3, 4, 5]",
       },
       {
         question:
-          "Implementa una función que reciba una cadena y devuelva un diccionario o un map con la frecuencia de cada carácter en la cadena.",
+          "En Twitter, necesitas calcular la media de los retweets de una serie de tweets.\nEscribe una función que calcule la media de retweets.\nInput:\nLista de retweets: [5, 10, 2, 8, 12]",
       },
       {
         question:
-          "Dada una lista enlazada, invierte el orden de sus nodos. La lista enlazada es una estructura de datos en la que cada nodo contiene un valor y una referencia al siguiente nodo en la secuencia. El objetivo es modificar la lista para que el último nodo se convierta en el primer nodo, el penúltimo nodo se convierta en el segundo, y así sucesivamente.\n\n# Nodo:\n#     valor: entero\n#     siguiente: Nodo (o nulo)\n#\n # Constructores:\n#     Nodo()\n#         valor = 0\n#         siguiente = nulo\n#         \n#     Nodo(valor)\n#         valor = valor dado\n#         siguiente = nulo\n#         \n#     Nodo(valor, siguiente)\n#         valor = valor dado\n#         siguiente = siguiente nodo dado\n\nEjemplo: \nInput: head = [1, 2, 3, 4, 5]\nOutput: [5, 4, 3, 2, 1]",
-      },
-    ],
-    junior: [
-      {
-        question:
-          "Dado un array de enteros únicos candidates y un entero target, devuelve todas las combinaciones únicas de candidates donde la suma de los números es igual a target. Los números en candidates pueden ser usados un número ilimitado de veces en la combinación.\n\n Las combinaciones pueden ser devueltas en cualquier orden. \n\n Ejemplo: \n Input: candidates = [2, 3, 6, 7], target = 7 \nOutput: [[2, 2, 3], [7]] \n\n Input: candidates = [2, 3, 5], target = 8 \nOutput: [[2, 2, 2, 2], [2, 3, 3], [3, 5]].",
+          "En Microsoft, tienes una lista de nombres de empleados y necesitas contar cuántos nombres empiezan con una letra específica.\nEscribe una función que cuente el número de nombres que empiezan con una letra dada.\nInput:\nLista de nombres: ['Alice', 'Bob', 'Charlie', 'Andrew']\nLetra: 'A'",
       },
       {
         question:
-          "Escribe una clase 'Rectángulo' con atributos 'ancho' y 'alto', y métodos para calcular el área y el perímetro.",
+          "En LinkedIn, necesitas determinar si un usuario tiene un perfil completo basado en una lista de campos requeridos.\nEscribe una función que verifique si todos los campos están completos.\nInput:\nCampos completos: {'name': 'John Doe', 'headline': 'Software Engineer', 'location': 'New York'}\nCampos requeridos: ['name', 'headline', 'location']",
       },
       {
         question:
-          "Define una clase base 'Animal' y una clase derivada 'Perro'. La clase 'Perro' debe tener un método que imprima 'Guau'.",
+          "En Instagram, necesitas calcular el total de 'likes' en una lista de publicaciones.\nEscribe una función que calcule el total de 'likes'.\nInput:\nLista de likes: [100, 250, 80, 300]",
       },
       {
         question:
-          "Crea una función que reciba un número n y devuelva una lista con los n primeros números de la secuencia de Fibonacci.",
+          "En Amazon, tienes una lista de fechas de envío y necesitas calcular el número de días de envío promedio.\nEscribe una función que calcule el promedio de días de envío.\nInput:\nLista de días de envío: [5, 7, 4, 6, 8]",
       },
       {
         question:
-          "Crea una clase 'Banco' con métodos para depositar y retirar dinero, y consultar el saldo.",
-      },
-    ],
-    senior: [],
-  },
-  frontend: {
-    intern: [
-      {
-        question:
-          "Escribe una función en JavaScript que tome una cadena y devuelva la misma cadena pero en mayúsculas.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que tome una matriz de números y devuelva la suma de todos los números.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que tome una cadena y devuelva 'true' si es un palíndromo y 'false' en caso contrario.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que tome un array de números y devuelva el número más grande.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que tome un array de números y devuelva el número más pequeño.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que tome una cadena y devuelva la cantidad de vocales en la cadena.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que tome una cadena y devuelva la cadena invertida.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que tome una matriz de números y devuelva una nueva matriz con los números ordenados de manera ascendente.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que tome un objeto y devuelva un array de los valores del objeto.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que tome un array de cadenas y devuelva una nueva matriz con las cadenas ordenadas alfabéticamente.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que tome dos números y devuelva su máximo común divisor (MCD).",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que tome una cadena y reemplace todas las ocurrencias de una subcadena con otra subcadena.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que tome un array de números y devuelva 'true' si el array está ordenado de manera ascendente, 'false' en caso contrario.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que tome una URL y devuelva un objeto con los parámetros de la consulta (query parameters) como pares clave-valor.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que tome una fecha como cadena y devuelva 'true' si la fecha es válida, 'false' en caso contrario.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que tome un array de objetos y un campo específico, y devuelva el objeto con el valor máximo en ese campo.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que tome una cadena y devuelva la primera letra de cada palabra en mayúscula.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que tome una matriz de números y devuelva una nueva matriz con los números duplicados eliminados.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que tome dos matrices y devuelva una nueva matriz que contenga solo los elementos comunes entre las dos matrices.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que tome un array de números y devuelva un nuevo array con los números elevados al cuadrado.",
-      },
-      {
-        question:
-          "Crea un componente en React que reciba una lista de tareas y las muestre en una lista. Cada tarea debe tener un botón para marcarla como completada.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que renderice un botón en React. Al hacer clic en el botón, debe mostrar una alerta con el mensaje 'Hola, mundo!'.",
-      },
-      {
-        question:
-          "Implementa un componente en React que tenga un campo de entrada de texto y un botón. Al hacer clic en el botón, el texto ingresado debe mostrarse debajo del campo de entrada.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que aplique estilos CSS a un elemento HTML para cambiar su color de fondo a azul.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que cree un div con un ancho de 100px, un alto de 100px y un color de fondo rojo usando CSS.",
-      },
-      {
-        question:
-          "Escribe una función en JavaScript que añada una clase CSS a un elemento HTML para ocultarlo.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que cambie el texto de un párrafo a 'Hola, mundo!' al hacer clic en un botón.",
+          "En Netflix, necesitas verificar si una lista de películas contiene una película específica.\nEscribe una función que verifique si una película está en la lista.\nInput:\nLista de películas: ['Movie A', 'Movie B', 'Movie C']\nPelícula a buscar: 'Movie B'",
       },
     ],
     junior: [
       {
         question:
-          "Escribe el código HTML básico para crear un formulario de contacto con campos para nombre, email y mensaje.",
+          "En Google, necesitas crear una consulta SQL que devuelva los usuarios que han iniciado sesión en el último mes.\nInput:\nTabla de sesiones: sessions (user_id, login_date)",
       },
       {
         question:
-          "Implementa una función en JavaScript que valide que un campo de texto no esté vacío antes de enviar un formulario.",
+          "En Facebook, necesitas calcular el total de interacciones (likes, shares, comments) en una publicación.\nEscribe una función que calcule el total de interacciones dado el número de likes, shares y comments.\nInput:\nLikes: 150\nShares: 30\nComments: 20",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que haga que un botón tenga un fondo azul cuando se le pase el cursor (hover).",
+          "En LinkedIn, necesitas una consulta MongoDB que devuelva los perfiles que fueron actualizados en los últimos 7 días.\nInput:\nColección de perfiles: profiles (profile_id, last_updated)",
       },
       {
         question:
-          "Implementa una función en JavaScript que cambie dinámicamente el contenido de un elemento <div> cuando se haga clic en un botón.",
+          "En Twitter, necesitas crear un endpoint en una API REST que permita obtener la lista de seguidores de un usuario.\nEscribe el código para un endpoint que devuelva la lista de seguidores.\nInput:\nEndpoint: GET /user/<user_id>/followers\nDatos de seguidores: [{'user_id': 2, 'name': 'Follower A'}, {'user_id': 3, 'name': 'Follower B'}]",
       },
       {
         question:
-          "Escribe el código HTML y CSS necesario para crear una barra de navegación horizontal básica.",
+          "En Microsoft, tienes una lista de tareas y necesitas filtrar las tareas completadas.\nEscribe una función que filtre las tareas completadas de una lista.\nInput:\nLista de tareas: [{'task': 'Task A', 'completed': True}, {'task': 'Task B', 'completed': False}, {'task': 'Task C', 'completed': True}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que agregue un nuevo elemento <li> a una lista <ul> cuando se envíe un formulario.",
+          "En Netflix, necesitas crear una consulta SQL que devuelva todas las películas de una categoría específica.\nInput:\nTabla de películas: movies (movie_id, title, category)",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que haga que una imagen tenga un borde sólido de 2px de color rojo.",
+          "En Google, necesitas crear una consulta MongoDB para contar el número de documentos en una colección con un campo específico.\nInput:\nColección: documents (field_name)",
       },
       {
         question:
-          "Implementa una función en JavaScript que cuente y muestre el número de caracteres restantes en tiempo real mientras se escribe en un campo de texto.",
+          "En LinkedIn, necesitas escribir una función que calcule el promedio de recomendaciones recibidas por usuario.\nEscribe una función que calcule el promedio de recomendaciones.\nInput:\nLista de recomendaciones por usuario: [5, 10, 7, 8]",
       },
       {
         question:
-          "Escribe el código HTML y CSS para crear una cuadrícula de imágenes en la que cada imagen tenga un tamaño de 100x100px y un espacio de 10px entre ellas.",
+          "En Twitter, necesitas crear una API que permita publicar un nuevo tweet.\nEscribe el código para un endpoint que permita publicar un tweet.\nInput:\nEndpoint: POST /tweets\nDatos del tweet: {'user_id': 1, 'content': 'Hello World!'}",
       },
       {
         question:
-          "Implementa una función en JavaScript que cambie el color de fondo de una página web cada vez que se actualice la página.",
-      },
-      {
-        question:
-          "Escribe un fragmento de código CSS que haga que un elemento <div> tenga una sombra con un desenfoque de 5px.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que valide que un campo de email tenga un formato correcto al perder el foco.",
-      },
-      {
-        question:
-          "Escribe el código HTML y CSS para crear un botón con un efecto de transición suave cuando se le pase el cursor (hover).",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que cambie el tamaño de fuente de un elemento <p> cuando se haga doble clic en él.",
-      },
-      {
-        question:
-          "Escribe un fragmento de código CSS que haga que un elemento <div> se desplace suavemente hacia abajo cuando se cargue la página.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que permita ocultar y mostrar el contenido de un elemento <div> al hacer clic en un botón.",
-      },
-      {
-        question:
-          "Escribe el código HTML y CSS para crear una lista de elementos <li> con viñetas personalizadas.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que valide que un campo de número tenga un valor dentro de un rango específico al enviar un formulario.",
-      },
-      {
-        question:
-          "Escribe un fragmento de código CSS que haga que un elemento <div> tenga un fondo degradado de color azul a verde.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que muestre un mensaje de alerta cuando se haga clic en un enlace específico.",
+          "En Amazon, necesitas crear una consulta SQL que devuelva todos los productos en stock.\nInput:\nTabla de inventario: inventory (product_id, stock_quantity)",
       },
     ],
     senior: [
       {
         question:
-          "Implementa una función en JavaScript que convierta una cadena de texto en formato camelCase.",
+          "En Amazon, necesitas escribir una consulta SQL para obtener el total de ventas por categoría de producto en los últimos seis meses.\nInput:\nTabla de ventas: sales (sale_id, product_id, sale_date, amount)\nTabla de productos: products (product_id, category_id)\nTabla de categorías: categories (category_id, category_name)",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que implemente un diseño de cuadrícula usando CSS Grid o Flexbox.",
+          "En Google, necesitas crear una API REST que permita gestionar publicaciones (crear, leer, actualizar, eliminar).\nEscribe el código para los endpoints básicos de gestión de publicaciones.\nInput:\nEndpoints: GET /posts, POST /posts, PUT /posts/<post_id>, DELETE /posts/<post_id>\nDatos de publicación: {'post_id': 1, 'title': 'New Post', 'content': 'Content of the post'}",
       },
       {
         question:
-          "Implementa una función en JavaScript que ordene alfabéticamente un array de objetos por el valor de una propiedad específica.",
+          "En Facebook, necesitas escribir una consulta MongoDB que agrupe los usuarios por región y calcule el número total de usuarios por región.\nInput:\nColección de usuarios: users (user_id, region)",
       },
       {
         question:
-          "Escribe el código HTML y CSS necesario para crear un menú desplegable (dropdown) con CSS puro.",
+          "En LinkedIn, necesitas escribir una función que genere un reporte de las publicaciones más comentadas en el último mes.\nEscribe una función que devuelva las publicaciones más comentadas.\nInput:\nLista de publicaciones con comentarios: [{'post_id': 1, 'comment_count': 50}, {'post_id': 2, 'comment_count': 80}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que busque y reemplace todas las ocurrencias de una palabra específica en una cadena de texto.",
+          "En Netflix, necesitas crear una API que permita obtener los registros de actividad de los usuarios en un período específico.\nEscribe el código para un endpoint que devuelva los registros de actividad.\nInput:\nEndpoint: GET /users/activities?start_date=<start_date>&end_date=<end_date>\nDatos de actividad: {'user_id': 1, 'activity': 'watch', 'timestamp': '2024-08-01T12:00:00'}",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que implemente un efecto de animación utilizando keyframes.",
+          "En Amazon, necesitas crear una consulta SQL que devuelva los productos que han sido comprados más de 100 veces.\nInput:\nTabla de ventas: sales (sale_id, product_id)\nTabla de productos: products (product_id, name)",
       },
       {
         question:
-          "Implementa una función en JavaScript que valide un formulario con validación personalizada usando expresiones regulares.",
+          "En Google, necesitas escribir una función que reciba un JSON de datos de usuario y devuelva un reporte con los usuarios que tienen más de una cierta cantidad de publicaciones.\nEscribe una función que devuelva el reporte.\nInput:\nDatos de usuario: [{'user_id': 1, 'posts': 25}, {'user_id': 2, 'posts': 10}, {'user_id': 3, 'posts': 30}]",
       },
       {
         question:
-          "Escribe el código HTML y CSS para crear un carrusel de imágenes que se desplacen automáticamente cada 5 segundos.",
+          "En Twitter, necesitas crear una consulta MongoDB que devuelva los tweets con más de 100 retweets.\nInput:\nColección de tweets: tweets (tweet_id, retweet_count)",
       },
       {
         question:
-          "Implementa una función en JavaScript que maneje la paginación de resultados de una lista de elementos.",
+          "En LinkedIn, necesitas una API que permita a los usuarios actualizar su perfil.\nEscribe el código para un endpoint que permita actualizar el perfil del usuario.\nInput:\nEndpoint: PUT /users/<user_id>\nDatos del perfil: {'name': 'Jane Smith', 'headline': 'senior Developer', 'location': 'San Francisco'}",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que implemente un diseño responsive para una página web.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que filtre y muestre los resultados de una lista dinámicamente según el criterio de búsqueda ingresado.",
-      },
-      {
-        question:
-          "Escribe el código HTML y CSS para crear un modal (ventana emergente) con efectos de transición suaves.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que obtenga datos de una API RESTful y los muestre dinámicamente en una página web.",
-      },
-      {
-        question:
-          "Escribe un fragmento de código CSS que implemente un diseño fluido (fluid layout) para adaptarse a diferentes tamaños de pantalla.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que maneje la autenticación de usuarios utilizando localStorage o sessionStorage.",
-      },
-      {
-        question:
-          "Escribe el código HTML y CSS necesario para crear un efecto de parallax en una página web.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que permita arrastrar y soltar elementos dentro de una página web.",
-      },
-      {
-        question:
-          "Escribe un fragmento de código CSS que implemente un diseño de tarjeta (card layout) con sombra y bordes redondeados.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que calcule y muestre el tiempo transcurrido desde una fecha específica hasta la fecha actual.",
-      },
-      {
-        question:
-          "Escribe el código HTML y CSS para crear un formulario de registro con validación de campos y mensajes de error personalizados.",
+          "En Netflix, necesitas escribir una consulta SQL que devuelva el promedio de duración de las películas por categoría.\nInput:\nTabla de películas: movies (movie_id, title, duration, category)",
       },
     ],
   },
@@ -330,247 +131,127 @@ const questionsCode = {
     intern: [
       {
         question:
-          "Escribe una función que conecte a una base de datos SQLite y cree una tabla llamada 'usuarios' con columnas 'id', 'nombre' y 'correo'.",
+          "En Google, necesitas crear una función que reciba una lista de números y devuelva el número máximo.\nInput:\nLista de números: [5, 12, 7, 23, 18]",
       },
       {
         question:
-          "Implementa una función que realice una consulta SQL para insertar un nuevo registro en la tabla 'usuarios'.",
+          "En Amazon, tienes una lista de datos de ventas y necesitas calcular el total de ventas.\nEscribe una función que calcule el total de ventas.\nInput:\nLista de ventas: [100.50, 200.75, 150.00, 80.25]",
       },
       {
         question:
-          "Escribe una función que consulte todos los registros de la tabla 'usuarios' y los devuelva en una lista.",
+          "En Netflix, necesitas crear una función que reciba un JSON con detalles de un usuario y devuelva solo el nombre del usuario.\nInput:\nJSON de usuario: {'user_id': 1, 'name': 'John Doe', 'email': 'john@example.com'}",
       },
       {
         question:
-          "Implementa una función que actualice el 'correo' de un usuario en la tabla 'usuarios' dado su 'id'.",
+          "En Facebook, necesitas crear una función que verifique si una lista de IDs de usuarios contiene un ID específico.\nInput:\nLista de IDs: [1, 2, 3, 4, 5]\nID a buscar: 3",
       },
       {
         question:
-          "Escribe una función que elimine un usuario de la tabla 'usuarios' dado su 'id'.",
+          "En Twitter, necesitas escribir una función que reciba una lista de retweets y devuelva el promedio de retweets.\nInput:\nLista de retweets: [10, 20, 15, 30]",
       },
       {
         question:
-          "Implementa una función que maneje la conexión a una API REST y obtenga datos en formato JSON.",
+          "En LinkedIn, necesitas una función que reciba un texto y devuelva la cantidad de palabras en el texto.\nInput:\nTexto: 'This is a sample text with several words.'",
       },
       {
         question:
-          "Escribe una función que lea un archivo JSON y lo convierta en un diccionario de Python.",
+          "En Instagram, tienes una lista de comentarios y necesitas contar cuántos comentarios contienen una palabra específica.\nEscribe una función que cuente los comentarios que contienen la palabra.\nInput:\nLista de comentarios: ['Great post!', 'I love this', 'Amazing content', 'This is great']\nPalabra a buscar: 'great'",
       },
       {
         question:
-          "Implementa una función que escriba un diccionario de Python en un archivo JSON.",
+          "En Amazon, necesitas calcular la media de precios en una lista de productos.\nEscribe una función que calcule la media de precios.\nInput:\nLista de precios: [25.99, 15.50, 30.00, 22.75]",
       },
       {
         question:
-          "Escribe una función que realice una solicitud HTTP GET a un endpoint y devuelva la respuesta.",
+          "En Google, necesitas una función que reciba una lista de fechas y devuelva la fecha más reciente.\nInput:\nLista de fechas: ['2024-08-01', '2024-08-05', '2024-08-03']",
       },
       {
         question:
-          "Implementa una función que genere un hash de una cadena utilizando SHA-256.",
-      },
-      {
-        question:
-          "Escribe una función que valide si una cadena tiene el formato de una dirección de correo electrónico.",
-      },
-      {
-        question:
-          "Implementa una función que lea y escriba datos en un archivo CSV.",
-      },
-      {
-        question:
-          "Escribe una función que realice una consulta SQL parametrizada para evitar inyecciones SQL.",
-      },
-      {
-        question:
-          "Implementa una función que conecte a una base de datos SQLite y realice una operación SELECT con una condición WHERE.",
-      },
-      {
-        question:
-          "Escribe una función que implemente un endpoint RESTful simple que responda con un mensaje 'Hola, mundo!'.",
-      },
-      {
-        question:
-          "Implementa una función que convierta una cadena en mayúsculas.",
-      },
-      {
-        question:
-          "Escribe una función que verifique si una cadena es un palíndromo.",
-      },
-      {
-        question:
-          "Implementa una función que calcule la suma de todos los números en una lista.",
-      },
-      {
-        question:
-          "Escribe una función que cuente la frecuencia de cada carácter en una cadena.",
-      },
-      {
-        question:
-          "Implementa una función que encuentre el número máximo en una lista de números.",
+          "En Facebook, tienes una lista de usuarios con sus edades y necesitas calcular la edad promedio.\nEscribe una función que calcule la edad promedio.\nInput:\nLista de edades: [25, 30, 35, 40]",
       },
     ],
     junior: [
       {
         question:
-          "Escribe una función que conecte a una base de datos MySQL y cree una tabla llamada 'empleados' con columnas 'id', 'nombre', 'puesto' y 'salario'.",
+          "En Microsoft, necesitas crear una API que permita agregar un nuevo usuario.\nEscribe el código para un endpoint que permita agregar un usuario a la base de datos.\nInput:\nEndpoint: POST /users\nDatos del usuario: {'name': 'Alice', 'email': 'alice@example.com'}",
       },
       {
         question:
-          "Implementa una función que realice una consulta SQL para insertar un nuevo registro en la tabla 'empleados'.",
+          "En LinkedIn, necesitas crear una función que reciba un JSON con detalles de empleados y devuelva solo los empleados con un salario mayor a un valor específico.\nInput:\nJSON de empleados: [{'id': 1, 'name': 'Bob', 'salary': 5000}, {'id': 2, 'name': 'Alice', 'salary': 6000}]\nSalario mínimo: 5500",
       },
       {
         question:
-          "Escribe una función que consulte todos los registros de la tabla 'empleados' y los devuelva en una lista.",
+          "En Netflix, necesitas escribir una función que reciba una lista de IDs de películas y devuelva una lista de nombres de películas.\nInput:\nLista de IDs: [101, 102, 103]\nDatos de películas: [{'id': 101, 'name': 'Movie A'}, {'id': 102, 'name': 'Movie B'}, {'id': 103, 'name': 'Movie C'}]",
       },
       {
         question:
-          "Implementa una función que actualice el 'salario' de un empleado en la tabla 'empleados' dado su 'id'.",
+          "En Twitter, necesitas una consulta SQL que devuelva todos los tweets publicados en los últimos 7 días.\nInput:\nTabla de tweets: tweets (tweet_id, content, publish_date)",
       },
       {
         question:
-          "Escribe una función que elimine un empleado de la tabla 'empleados' dado su 'id'.",
+          "En Google, necesitas crear una API que permita obtener detalles de un producto por su ID.\nEscribe el código para un endpoint que devuelva la información del producto.\nInput:\nEndpoint: GET /products/<product_id>\nDatos del producto: {'product_id': 1, 'name': 'Product A', 'price': 19.99}",
       },
       {
         question:
-          "Implementa una función que maneje una conexión a una API REST y obtenga datos en formato JSON.",
+          "En Facebook, necesitas escribir una consulta SQL que devuelva todos los comentarios de una publicación específica.\nInput:\nTabla de comentarios: comments (comment_id, post_id, comment_text)",
       },
       {
         question:
-          "Escribe una función que lea datos de un archivo JSON y los convierta en un diccionario de Python.",
+          "En LinkedIn, necesitas una API que permita actualizar la información de un usuario.\nEscribe el código para un endpoint que permita actualizar la información del usuario.\nInput:\nEndpoint: PUT /users/<user_id>\nDatos a actualizar: {'name': 'Alice Smith', 'email': 'alice.smith@example.com'}",
       },
       {
         question:
-          "Implementa una función que escriba un diccionario de Python en un archivo JSON.",
+          "En Netflix, necesitas una función que devuelva el total de duraciones de una lista de películas.\nInput:\nLista de duraciones: [120, 90, 150, 110]",
       },
       {
         question:
-          "Escribe una función que realice una solicitud HTTP POST a un endpoint con un cuerpo de solicitud en formato JSON.",
+          "En Microsoft, tienes una lista de productos y necesitas filtrar solo los productos que están en stock.\nEscribe una función que filtre los productos en stock.\nInput:\nLista de productos: [{'id': 1, 'in_stock': True}, {'id': 2, 'in_stock': False}, {'id': 3, 'in_stock': True}]",
       },
       {
         question:
-          "Implementa una función que genere un hash de una cadena utilizando MD5.",
-      },
-      {
-        question:
-          "Escribe una función que valide si una cadena tiene el formato de una dirección de correo electrónico utilizando una expresión regular.",
-      },
-      {
-        question:
-          "Implementa una función que lea datos de un archivo CSV y los convierta en una lista de diccionarios.",
-      },
-      {
-        question:
-          "Escribe una función que realice una consulta SQL parametrizada para evitar inyecciones SQL.",
-      },
-      {
-        question:
-          "Implementa una función que conecte a una base de datos PostgreSQL y realice una operación SELECT con una condición WHERE.",
-      },
-      {
-        question:
-          "Escribe una función que implemente un servidor HTTP simple que responda a una solicitud GET con un mensaje 'Hola, mundo!'.",
-      },
-      {
-        question:
-          "Implementa una función que convierta una cadena en mayúsculas.",
-      },
-      {
-        question:
-          "Escribe una función que verifique si una cadena es un palíndromo.",
-      },
-      {
-        question:
-          "Implementa una función que calcule la suma de todos los números en una lista.",
-      },
-      {
-        question:
-          "Escribe una función que cuente la frecuencia de cada carácter en una cadena.",
-      },
-      {
-        question:
-          "Implementa una función que encuentre el número máximo en una lista de números.",
+          "En Google, necesitas escribir una consulta MongoDB que devuelva todos los documentos con una fecha de creación en el último mes.\nInput:\nColección de documentos: documents (document_id, creation_date)",
       },
     ],
     senior: [
       {
         question:
-          "Implementa una función que realice una consulta SQL para seleccionar todos los registros de una tabla llamada 'usuarios'.",
+          "En Amazon, necesitas crear una API que permita gestionar productos (crear, leer, actualizar, eliminar).\nEscribe el código para los endpoints básicos de gestión de productos.\nInput:\nEndpoints: GET /products, POST /products, PUT /products/<product_id>, DELETE /products/<product_id>\nDatos del producto: {'product_id': 1, 'name': 'Product X', 'price': 29.99}",
       },
       {
         question:
-          "Escribe una función que realice una conexión a una base de datos y ejecute una consulta SELECT.",
+          "En Google, necesitas una consulta SQL que devuelva el total de ventas y el número de transacciones por cliente en el último año.\nInput:\nTabla de ventas: sales (sale_id, customer_id, sale_date, amount)",
       },
       {
         question:
-          "Implementa una función que consulte una API REST y devuelva los datos en formato JSON.",
+          "En Facebook, necesitas una función que reciba una lista de usuarios y devuelva solo aquellos que tienen más de un número específico de amigos.\nInput:\nLista de usuarios: [{'user_id': 1, 'friends_count': 150}, {'user_id': 2, 'friends_count': 80}]\nNúmero mínimo de amigos: 100",
       },
       {
         question:
-          "Escribe una función que realice una operación CRUD (Create, Read, Update, Delete) en una base de datos utilizando SQL.",
+          "En LinkedIn, necesitas crear una API que permita gestionar las conexiones entre usuarios (enviar, aceptar, rechazar).\nEscribe el código para los endpoints básicos de gestión de conexiones.\nInput:\nEndpoints: POST /connections/send, POST /connections/accept, POST /connections/reject\nDatos de conexión: {'from_user': 1, 'to_user': 2}",
       },
       {
         question:
-          "Implementa una función que maneje la paginación de resultados de una consulta SQL.",
+          "En Netflix, necesitas una consulta MongoDB que devuelva el total de visualizaciones por categoría en el último mes.\nInput:\nColección de visualizaciones: views (user_id, movie_id, view_date)\nColección de películas: movies (movie_id, category)",
       },
       {
         question:
-          "Escribe una función que encripte una cadena utilizando un algoritmo de hash (por ejemplo, SHA-256).",
+          "En Twitter, necesitas escribir una consulta SQL que devuelva todos los usuarios que han publicado más de un número específico de tweets en el último año.\nInput:\nTabla de tweets: tweets (tweet_id, user_id, publish_date)",
       },
       {
         question:
-          "Implementa un servidor HTTP básico que responda a una solicitud GET con un mensaje 'Hola, mundo!'.",
+          "En Instagram, necesitas una función que reciba una lista de seguidores y devuelva los seguidores que siguen a más de un número específico de usuarios.\nInput:\nLista de seguidores: [{'user_id': 1, 'following_count': 150}, {'user_id': 2, 'following_count': 50}]\nNúmero mínimo de seguidores: 100",
       },
       {
         question:
-          "Escribe una función que maneje la autenticación de usuarios utilizando tokens JWT.",
+          "En Microsoft, necesitas crear una API que permita obtener los detalles de una venta por su ID.\nEscribe el código para un endpoint que devuelva la información de la venta.\nInput:\nEndpoint: GET /sales/<sale_id>\nDatos de la venta: {'sale_id': 1, 'product_id': 1, 'amount': 49.99}",
       },
       {
         question:
-          "Implementa una función que envíe un correo electrónico utilizando un servicio de SMTP.",
+          "En Google, necesitas una función que reciba un JSON de transacciones y devuelva el total de transacciones por cada tipo de transacción.\nInput:\nJSON de transacciones: [{'transaction_id': 1, 'type': 'credit', 'amount': 100}, {'transaction_id': 2, 'type': 'debit', 'amount': 50}]",
       },
       {
         question:
-          "Escribe una función que lea y escriba datos en un archivo JSON.",
-      },
-      {
-        question:
-          "Implementa una función que realice una operación JOIN en SQL entre dos tablas relacionadas.",
-      },
-      {
-        question:
-          "Escribe una función que implemente un sistema de caché simple utilizando un diccionario en Python.",
-      },
-      {
-        question:
-          "Implementa una función que valide una dirección de correo electrónico utilizando una expresión regular.",
-      },
-      {
-        question:
-          "Escribe una función que realice una consulta parametrizada para prevenir inyecciones SQL.",
-      },
-      {
-        question:
-          "Implementa una función que maneje las migraciones de una base de datos utilizando una herramienta como Flyway o Alembic.",
-      },
-      {
-        question:
-          "Escribe una función que implemente un middleware en un framework web como Express.js o Flask.",
-      },
-      {
-        question:
-          "Implementa una función que registre eventos y errores en un archivo de log.",
-      },
-      {
-        question:
-          "Escribe una función que genere y verifique contraseñas seguras utilizando bcrypt.",
-      },
-      {
-        question:
-          "Implementa una función que realice operaciones CRUD en una base de datos NoSQL como MongoDB.",
-      },
-      {
-        question:
-          "Escribe una función que implemente un endpoint RESTful para subir archivos y almacenarlos en el servidor.",
+          "En LinkedIn, necesitas crear una API que permita gestionar las publicaciones (crear, leer, actualizar, eliminar).\nEscribe el código para los endpoints básicos de gestión de publicaciones.\nInput:\nEndpoints: GET /posts, POST /posts, PUT /posts/<post_id>, DELETE /posts/<post_id>\nDatos de publicación: {'post_id': 1, 'title': 'New Post', 'content': 'This is the content'}",
       },
     ],
   },
@@ -578,247 +259,227 @@ const questionsCode = {
     intern: [
       {
         question:
-          "Escribe una función en JavaScript que calcule la suma de dos números.",
+          "En LinkedIn, necesitas crear una función que reciba un objeto JSON con los datos de un usuario y devuelva una respuesta en formato HTML que muestre el nombre y el email del usuario.\nInput:\nJSON del usuario: {'name': 'Alice', 'email': 'alice@example.com'}",
       },
       {
         question:
-          "Implementa una función en JavaScript que encuentre el número mayor en un array de números.",
+          "En Google, necesitas crear una página web simple con HTML y CSS que muestre un formulario de inicio de sesión con campos para el nombre de usuario y la contraseña.\nInput:\nFormulario de inicio de sesión: \n- Campo de nombre de usuario\n- Campo de contraseña",
       },
       {
         question:
-          "Escribe el código HTML y CSS para crear una página web con un encabezado, un cuerpo y un pie de página.",
+          "En Twitter, necesitas una función que procese una lista de tweets y devuelva el tweet con más retweets.\nEscribe una función que devuelva el tweet con más retweets.\nInput:\nLista de tweets: [{'tweet': 'Tweet A', 'retweets': 15}, {'tweet': 'Tweet B', 'retweets': 25}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que verifique si un número dado es primo.",
+          "En Facebook, necesitas crear una página HTML que muestre una tabla con los datos de usuarios y sus edades. La tabla debe tener encabezados para el nombre y la edad.\nInput:\nDatos de usuarios: [{'name': 'Bob', 'age': 30}, {'name': 'Alice', 'age': 25}]",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que haga que un elemento <div> tenga un fondo verde y texto blanco centrado.",
+          "En Instagram, tienes una API que devuelve una lista de posts. Crea una función en JavaScript que consuma esta API y muestre los títulos de los posts en una lista HTML.\nInput:\nEndpoint de API: GET /posts\nDatos de posts: [{'id': 1, 'title': 'Post A'}, {'id': 2, 'title': 'Post B'}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que convierta un número decimal en binario.",
+          "En Amazon, necesitas crear una página web que muestre un producto con su nombre, precio y descripción. Usa HTML para la estructura y CSS para el estilo.\nInput:\nDatos del producto: {'name': 'Product X', 'price': '29.99', 'description': 'A great product'}",
       },
       {
         question:
-          "Escribe el código HTML y CSS necesario para crear una lista ordenada (<ol>) con tres elementos.",
+          "En Netflix, necesitas una función en JavaScript que tome una lista de películas y devuelva una lista de títulos en orden alfabético.\nInput:\nLista de películas: [{'title': 'Movie B'}, {'title': 'Movie A'}, {'title': 'Movie C'}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que calcule el factorial de un número dado.",
+          "En LinkedIn, necesitas una API que permita a los usuarios actualizar su perfil. Crea una función en JavaScript que envíe una solicitud PUT a esta API para actualizar el perfil del usuario.\nInput:\nEndpoint de API: PUT /users/<user_id>\nDatos de actualización: {'name': 'John Doe', 'headline': 'Developer'}",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que haga que un botón tenga bordes redondeados y un efecto de sombra al pasar el cursor.",
+          "En Google, necesitas una función que genere un archivo JSON con una lista de usuarios y sus edades. La función debe guardar el archivo en el sistema de archivos.\nInput:\nLista de usuarios: [{'name': 'Alice', 'age': 28}, {'name': 'Bob', 'age': 32}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que verifique si una cadena de texto es un palíndromo.",
-      },
-      {
-        question:
-          "Escribe el código HTML y CSS para crear un formulario de contacto con campos para nombre, email y mensaje.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que ordene alfabéticamente un array de strings.",
-      },
-      {
-        question:
-          "Escribe un fragmento de código CSS que implemente un diseño de dos columnas con un ancho fijo y un margen entre ellas.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que calcule la potencia de un número dado.",
-      },
-      {
-        question:
-          "Escribe el código HTML y CSS necesario para crear una barra de navegación horizontal con tres enlaces.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que sume todos los elementos de un array.",
-      },
-      {
-        question:
-          "Escribe un fragmento de código CSS que haga que un elemento <div> tenga un borde sólido de 1px de color negro.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que encuentre el número menor en un array de números.",
-      },
-      {
-        question:
-          "Escribe el código HTML y CSS para crear una tabla con dos filas y dos columnas.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que busque y reemplace todas las ocurrencias de una palabra específica en una cadena de texto.",
+          "En Twitter, necesitas una función en JavaScript que tome una respuesta JSON de un endpoint y muestre el contenido de los tweets en una página web.\nInput:\nDatos del endpoint: [{'tweet_id': 1, 'content': 'Hello World!'}, {'tweet_id': 2, 'content': 'Goodbye World!'}]",
       },
     ],
     junior: [
       {
         question:
-          "Implementa una función en JavaScript que valide un formulario con campos obligatorios (nombre, email, mensaje).",
+          "En LinkedIn, necesitas crear un formulario de registro en HTML con campos para el nombre, el correo electrónico y la contraseña. La página debe tener estilo con CSS.\nInput:\nCampos del formulario: \n- Nombre\n- Correo electrónico\n- Contraseña",
       },
       {
         question:
-          "Escribe el código HTML y CSS para crear una tabla que muestre datos de usuarios (columnas: nombre, edad, correo).",
+          "En Facebook, necesitas crear una función que reciba una lista de comentarios y devuelva el comentario más reciente basado en la fecha de publicación.\nInput:\nLista de comentarios: [{'comment': 'Nice post!', 'date': '2024-08-05'}, {'comment': 'Great!', 'date': '2024-08-01'}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que consulte una API REST y muestre los datos en una página web.",
+          "En Twitter, necesitas una API que devuelva una lista de usuarios con su nombre y número de seguidores. Crea una función en JavaScript que consuma esta API y muestre los nombres de los usuarios en una página web.\nInput:\nEndpoint de API: GET /users\nDatos de usuarios: [{'name': 'Alice', 'followers': 150}, {'name': 'Bob', 'followers': 120}]",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que implemente un diseño de cuadrícula (grid layout) con 3 columnas y 2 filas.",
+          "En Netflix, necesitas una consulta SQL que devuelva todos los usuarios que han visto una película específica en el último mes.\nInput:\nTabla de visualizaciones: views (user_id, movie_id, view_date)\nTabla de películas: movies (movie_id, title)",
       },
       {
         question:
-          "Implementa una función en JavaScript que calcule la edad de una persona a partir de su fecha de nacimiento.",
+          "En Amazon, necesitas una API que permita obtener una lista de productos filtrados por categoría. Crea una función en JavaScript que consuma esta API y muestre los nombres de los productos en una página web.\nInput:\nEndpoint de API: GET /products?category=<category>\nDatos de productos: [{'product_id': 1, 'name': 'Product A'}, {'product_id': 2, 'name': 'Product B'}]",
       },
       {
         question:
-          "Escribe el código HTML y CSS necesario para crear un formulario de registro con campos para nombre, email, contraseña y confirmación de contraseña.",
+          "En Google, necesitas crear una página de perfil de usuario en HTML y CSS que muestre el nombre, la foto de perfil y la biografía del usuario.\nInput:\nDatos del usuario: {'name': 'John Doe', 'profile_picture': 'john.jpg', 'bio': 'Software Developer'}",
       },
       {
         question:
-          "Implementa una función en JavaScript que maneje el inicio de sesión de usuarios usando localStorage.",
+          "En Facebook, necesitas crear una función que procese una lista de publicaciones y devuelva el total de comentarios en todas las publicaciones.\nInput:\nLista de publicaciones: [{'post_id': 1, 'comments_count': 5}, {'post_id': 2, 'comments_count': 8}]",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que haga que un botón tenga un fondo azul y texto blanco, con bordes redondeados.",
+          "En LinkedIn, necesitas crear un endpoint que permita a los usuarios crear nuevas publicaciones. Escribe el código para el endpoint que recibe los datos de la publicación y los almacena en la base de datos.\nInput:\nEndpoint: POST /posts\nDatos de la publicación: {'title': 'New Post', 'content': 'Content of the post'}",
       },
       {
         question:
-          "Implementa una función en JavaScript que valide que un campo de email tenga un formato correcto al perder el foco.",
+          "En Netflix, necesitas una función en JavaScript que tome una lista de ratings y calcule el rating promedio de todas las películas.\nInput:\nLista de ratings: [4.5, 3.8, 5.0, 4.2]",
       },
       {
         question:
-          "Escribe el código HTML y CSS para crear una lista de elementos con viñetas personalizadas.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que maneje la paginación de resultados de una lista de elementos.",
-      },
-      {
-        question:
-          "Escribe un fragmento de código CSS que haga que un elemento <div> tenga una sombra sutil.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que calcule y muestre el total de una factura a partir de una lista de productos con precios.",
-      },
-      {
-        question:
-          "Escribe el código HTML y CSS para crear un menú de navegación horizontal con tres enlaces.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que ordene alfabéticamente un array de nombres.",
-      },
-      {
-        question:
-          "Escribe un fragmento de código CSS que implemente un diseño responsive para una página web.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que maneje el envío de un formulario y muestre un mensaje de confirmación.",
-      },
-      {
-        question:
-          "Escribe el código HTML y CSS necesario para crear un carrusel de imágenes que se desplacen automáticamente cada 5 segundos.",
-      },
-      {
-        question:
-          "Implementa una función en JavaScript que obtenga datos de un servidor mediante una solicitud HTTP (AJAX).",
-      },
-      {
-        question:
-          "Escribe un fragmento de código CSS que haga que un elemento <div> tenga un borde sólido de 1px de color gris.",
+          "En Twitter, necesitas crear una página web con HTML y CSS que muestre una lista de tweets en un formato de tarjeta. Cada tarjeta debe mostrar el contenido del tweet y el nombre del usuario.\nInput:\nDatos de tweets: [{'user': 'Alice', 'content': 'Hello World!'}, {'user': 'Bob', 'content': 'Goodbye World!'}]",
       },
     ],
     senior: [
       {
         question:
-          "Implementa una función en JavaScript que maneje la autenticación de usuarios utilizando JSON Web Tokens (JWT).",
+          "En LinkedIn, necesitas una API que permita gestionar conexiones entre usuarios (enviar, aceptar, rechazar). Escribe el código para los endpoints básicos de gestión de conexiones.\nInput:\nEndpoints: POST /connections/send, POST /connections/accept, POST /connections/reject\nDatos de conexión: {'from_user': 1, 'to_user': 2}",
       },
       {
         question:
-          "Escribe el código HTML y CSS necesario para crear un dashboard con un gráfico interactivo utilizando bibliotecas como Chart.js o D3.js.",
+          "En Amazon, necesitas crear una API que permita obtener el total de ventas y el número de transacciones por cliente en el último año. Crea una función que realice esta operación.\nInput:\nDatos de ventas: [{'sale_id': 1, 'customer_id': 1, 'sale_date': '2024-07-01', 'amount': 50.0}, {'sale_id': 2, 'customer_id': 1, 'sale_date': '2024-08-01', 'amount': 70.0}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que consulte una base de datos MongoDB y devuelva los resultados en formato JSON.",
+          "En Google, necesitas una función que genere un archivo CSV con una lista de productos y sus precios. La función debe guardar el archivo en el sistema de archivos.\nInput:\nLista de productos: [{'product_id': 1, 'name': 'Product X', 'price': 29.99}, {'product_id': 2, 'name': 'Product Y', 'price': 49.99}]",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que implemente un diseño de mosaico (tiles) con imágenes y texto.",
+          "En Facebook, necesitas una API que permita obtener los detalles de una publicación por su ID. Escribe el código para un endpoint que devuelva la información de la publicación.\nInput:\nEndpoint: GET /posts/<post_id>\nDatos de la publicación: {'post_id': 1, 'title': 'Post Title', 'content': 'Post content'}",
       },
       {
         question:
-          "Implementa una función en JavaScript que maneje el CRUD (Create, Read, Update, Delete) de usuarios utilizando Node.js y Express.",
+          "En Netflix, necesitas crear una consulta MongoDB que devuelva el total de visualizaciones por categoría en el último mes. Escribe la consulta en MongoDB.\nInput:\nColección de visualizaciones: views (user_id, movie_id, view_date)\nColección de películas: movies (movie_id, category)",
       },
       {
         question:
-          "Escribe el código HTML y CSS para crear un formulario de edición de perfil con campos para nombre, correo, imagen de perfil y contraseña.",
+          "En LinkedIn, necesitas una función en JavaScript que consuma una API que devuelve detalles de usuarios y muestre una lista de usuarios con sus nombres y fotos de perfil en una página web.\nInput:\nEndpoint de API: GET /users\nDatos de usuarios: [{'user_id': 1, 'name': 'Alice', 'profile_picture': 'alice.jpg'}, {'user_id': 2, 'name': 'Bob', 'profile_picture': 'bob.jpg'}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que valide la fortaleza de una contraseña según criterios como longitud, caracteres especiales, etc.",
+          "En Amazon, necesitas una página de administración en HTML y CSS que muestre una tabla de productos con opciones para editar y eliminar cada producto.\nInput:\nDatos de productos: [{'product_id': 1, 'name': 'Product A', 'price': '20.00'}, {'product_id': 2, 'name': 'Product B', 'price': '35.00'}]",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que implemente animaciones CSS avanzadas utilizando keyframes.",
+          "En Google, necesitas una API que permita a los usuarios filtrar productos por categoría y rango de precio. Crea una función para este endpoint.\nInput:\nEndpoint: GET /products?category=<category>&min_price=<min_price>&max_price=<max_price>\nDatos de productos: [{'product_id': 1, 'category': 'Electronics', 'price': 99.99}, {'product_id': 2, 'category': 'Books', 'price': 14.99}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que gestione el envío y recepción de mensajes en tiempo real utilizando WebSockets.",
+          "En Twitter, necesitas crear una función en JavaScript que consuma una API que devuelve una lista de tweets y muestre los tweets en una página web con una interfaz de usuario sencilla.\nInput:\nEndpoint de API: GET /tweets\nDatos de tweets: [{'tweet_id': 1, 'content': 'Hello Twitter!'}, {'tweet_id': 2, 'content': 'JavaScript is awesome!'}]",
       },
       {
         question:
-          "Escribe el código HTML y CSS necesario para crear un formulario de búsqueda con autocompletado utilizando JavaScript.",
+          "En Facebook, necesitas una función que tome una lista de publicaciones y devuelva la publicación con el mayor número de interacciones (likes y comentarios).\nInput:\nLista de publicaciones: [{'post_id': 1, 'likes': 10, 'comments': 5}, {'post_id': 2, 'likes': 15, 'comments': 10}]",
+      },
+    ],
+  },
+  frontend: {
+    intern: [
+      {
+        question:
+          "En Facebook, necesitas crear una página web simple en HTML que muestre un formulario de registro con campos para el nombre y el correo electrónico. Usa CSS para el estilo básico.\nInput:\nFormulario de registro:\n- Campo de nombre\n- Campo de correo electrónico",
       },
       {
         question:
-          "Implementa una función en JavaScript que calcule y muestre el tiempo transcurrido desde la última actividad del usuario en la sesión.",
+          "En LinkedIn, necesitas crear una página web en HTML y CSS que muestre una tabla con los nombres de los empleados y sus roles. La tabla debe tener encabezados para 'Nombre' y 'Rol'.\nInput:\nDatos de empleados: [{'name': 'Alice', 'role': 'Developer'}, {'name': 'Bob', 'role': 'Designer'}]",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que implemente un diseño fluido (fluid layout) con media queries para diferentes tamaños de pantalla.",
+          "En Google, necesitas crear una página web que muestre un contador en JavaScript que aumente el número cada vez que se haga clic en un botón.\nInput:\nBotón de incrementar\nContador inicial: 0",
       },
       {
         question:
-          "Implementa una función en JavaScript que maneje la internacionalización (i18n) de una aplicación web mediante el uso de bibliotecas como i18next.",
+          "En Instagram, necesitas escribir una función en JavaScript que tome una lista de cadenas y devuelva la cadena más larga.\nInput:\nLista de cadenas: ['short', 'medium length', 'a much longer string']",
       },
       {
         question:
-          "Escribe el código HTML y CSS para crear una lista de elementos desplegable (dropdown) con animaciones CSS.",
+          "En Amazon, crea una página HTML que tenga un botón para cambiar el color de fondo de la página. Usa JavaScript para implementar el cambio de color.\nInput:\nBotón de cambio de color\nColores posibles: rojo, azul, verde",
       },
       {
         question:
-          "Implementa una función en JavaScript que ordene dinámicamente una tabla de datos al hacer clic en el encabezado de una columna.",
+          "En Netflix, necesitas una página web que muestre una lista de películas con sus títulos y descripciones en un formato de tarjetas usando HTML y CSS.\nInput:\nDatos de películas: [{'title': 'Movie A', 'description': 'Description A'}, {'title': 'Movie B', 'description': 'Description B'}]",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que haga que un elemento <div> tenga un efecto de parallax en respuesta al desplazamiento vertical.",
+          "En Google, necesitas una página HTML con un formulario de búsqueda y un resultado de búsqueda que se muestre debajo del formulario. Usa CSS para el estilo básico.\nInput:\nFormulario de búsqueda\nResultado de búsqueda: 'No results found'",
+      },
+    ],
+    junior: [
+      {
+        question:
+          "En LinkedIn, necesitas crear una página web en HTML y CSS que muestre una lista de artículos de blog con sus títulos y descripciones en formato de lista.\nInput:\nDatos de artículos: [{'title': 'Article 1', 'description': 'Description 1'}, {'title': 'Article 2', 'description': 'Description 2'}]",
       },
       {
         question:
-          "Implementa una función en JavaScript que maneje la carga y manipulación de archivos (upload/download) utilizando Node.js y Express.",
+          "En Facebook, crea una página HTML con un formulario que permita ingresar nombre, correo electrónico y mensaje. Usa CSS para el diseño del formulario.\nInput:\nCampos del formulario:\n- Nombre\n- Correo electrónico\n- Mensaje",
       },
       {
         question:
-          "Escribe el código HTML y CSS necesario para crear una barra de navegación con pestañas (tabs) que cambien dinámicamente el contenido mostrado.",
+          "En Twitter, necesitas crear una página en HTML y CSS que muestre un reloj digital. Usa JavaScript para actualizar la hora en tiempo real.\nInput:\nReloj digital\nFormato de hora: HH:MM:SS",
       },
       {
         question:
-          "Implementa una función en JavaScript que realice operaciones matemáticas complejas (por ejemplo, cálculos estadísticos) sobre un conjunto de datos.",
+          "En Netflix, necesitas una página HTML que muestre una cuadrícula de imágenes de películas. Usa CSS para el diseño de la cuadrícula y asegúrate de que las imágenes se ajusten correctamente.\nInput:\nDatos de imágenes: ['image1.jpg', 'image2.jpg', 'image3.jpg']",
       },
       {
         question:
-          "Escribe un fragmento de código CSS que implemente un diseño de tarjeta (card layout) adaptable y accesible.",
+          "En LinkedIn, crea una página en HTML y CSS con un menú de navegación horizontal que contenga enlaces a Inicio, Servicios y Contacto. Usa CSS para el estilo del menú.\nInput:\nMenú de navegación:\n- Inicio\n- Servicios\n- Contacto",
+      },
+      {
+        question:
+          "En Amazon, necesitas una página web que muestre una tarjeta de producto con nombre, precio y una imagen. Usa HTML y CSS para el diseño.\nInput:\nDatos del producto: {'name': 'Product X', 'price': '99.99', 'image': 'product.jpg'}",
+      },
+      {
+        question:
+          "En Google, crea una página HTML que tenga un formulario para enviar comentarios. Usa CSS para el estilo del formulario y asegúrate de que tenga campos para nombre, correo electrónico y mensaje.\nInput:\nCampos del formulario:\n- Nombre\n- Correo electrónico\n- Mensaje",
+      },
+    ],
+    senior: [
+      {
+        question:
+          "En LinkedIn, necesitas crear una página en HTML y CSS que muestre un dashboard con gráficos de barras y líneas. Usa una librería de gráficos como Chart.js para representar los datos.\nInput:\nDatos de gráficos: {'labels': ['January', 'February', 'March'], 'data': [10, 20, 30]}",
+      },
+      {
+        question:
+          "En Google, necesitas una página web con una barra de navegación fija en la parte superior y un contenido que se desplace hacia abajo. Usa CSS para el diseño y asegúrate de que la barra de navegación se mantenga fija al hacer scroll.\nInput:\nBarra de navegación fija\nContenido desplazable",
+      },
+      {
+        question:
+          "En Amazon, crea una página web en HTML y CSS que muestre un catálogo de productos con filtros de búsqueda y categorías. Usa JavaScript para implementar el filtrado de productos.\nInput:\nDatos de productos: [{'name': 'Product A', 'category': 'Electronics'}, {'name': 'Product B', 'category': 'Books'}]\nCategorías de filtro: 'Electronics', 'Books'",
+      },
+      {
+        question:
+          "En Netflix, necesitas crear una página web en HTML y CSS que muestre un slider de imágenes con flechas para navegar entre las imágenes. Usa JavaScript para implementar la funcionalidad del slider.\nInput:\nImágenes para el slider: ['image1.jpg', 'image2.jpg', 'image3.jpg']",
+      },
+      {
+        question:
+          "En LinkedIn, crea una página de perfil en HTML y CSS que muestre la información del usuario, incluyendo una foto de perfil, nombre, título y biografía. Usa CSS para el diseño.\nInput:\nDatos del usuario: {'name': 'John Doe', 'profile_picture': 'john.jpg', 'title': 'Software Engineer', 'bio': 'Passionate developer.'}",
+      },
+      {
+        question:
+          "En Twitter, necesitas una página HTML que muestre un formulario para enviar mensajes directos. Usa CSS para el diseño del formulario y asegúrate de que tenga campos para destinatario, asunto y mensaje.\nInput:\nCampos del formulario:\n- Destinatario\n- Asunto\n- Mensaje",
+      },
+      {
+        question:
+          "En Google, crea una página en HTML y CSS que tenga una sección de comentarios con un campo de entrada para agregar nuevos comentarios y una lista que muestre todos los comentarios existentes. Usa JavaScript para manejar el agregado de nuevos comentarios.\nInput:\nComentarios existentes: ['Nice!', 'Interesting article.']",
+      },
+      {
+        question:
+          "En Instagram, necesitas una página HTML con una galería de imágenes que se muestre en un formato de cuadrícula. Usa CSS para el diseño de la galería y asegúrate de que las imágenes se ajusten correctamente.\nInput:\nDatos de imágenes: ['img1.jpg', 'img2.jpg', 'img3.jpg']",
+      },
+      {
+        question:
+          "En Amazon, necesitas una página web que muestre una lista de reseñas de productos con calificaciones y comentarios. Usa HTML y CSS para el diseño y JavaScript para manejar el filtrado por calificación.\nInput:\nDatos de reseñas: [{'product': 'Product A', 'rating': 4, 'comment': 'Good product!'}, {'product': 'Product B', 'rating': 5, 'comment': 'Excellent!'}]",
       },
     ],
   },

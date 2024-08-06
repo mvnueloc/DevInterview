@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { getLocalStorage } from "../services/useLocalStorage";
 import { feedbackContext } from "../context/feedbackContext";
-
+import { motion } from "framer-motion";
 import IAicon from "../components/icons/IA";
 import ResumenQuest from "../components/feedback/ResumenPreguntas";
 import ResumenCode from "../components/feedback/ResumenCode";
@@ -22,9 +22,11 @@ function FeedbackPage() {
     const storedLanguage = getLocalStorage("language");
 
     if (!storedData && !storedDataCode) {
+
       navigate("/practicar");
       return;
     }
+
 
     if (storedQuestions) {
       setQuestions(JSON.parse(storedQuestions));
@@ -61,6 +63,7 @@ function FeedbackPage() {
           <IAicon className="size-8" color="#4a67a1" />
           Retroalimentación
         </h1>
+
         {!data ? (
           <div>No hay feedback</div>
         ) : data["status"] === "error-response" ? (
@@ -86,6 +89,7 @@ function FeedbackPage() {
         )}
       </section>
     </main>
+
   );
 }
 

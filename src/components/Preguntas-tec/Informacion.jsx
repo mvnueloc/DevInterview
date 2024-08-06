@@ -4,6 +4,7 @@ import questions from "../../data/preguntasTecnicas";
 import questionsCode from "../../data/preguntasCode";
 import { executeCode } from "../../services/apiCode";
 import Play from "../icons/Play";
+import { motion } from "framer-motion";
 
 import ProblemIcon from "../icons/Problem";
 
@@ -152,7 +153,11 @@ const Informacion = ({
   };
 
   return (
-    <div className="flex flex-col flex-1 w-full bg-[#1B1D20] rounded-lg base:h-full">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="flex flex-col flex-1 w-full bg-[#1B1D20] rounded-lg base:h-full">
       <div className="px-2 py-2 inline-flex gap-2 items-center bg-[#28292c] w-full rounded-t-lg">
         <ProblemIcon className="size-4" />
         <span className="text-sm font-medium text-gray-200">Entrevista</span>
@@ -180,20 +185,22 @@ const Informacion = ({
           <div className="base:flex-1 relative">
             <div className="hidden inset-0 overflow-hidden base:block base:absolute py-4 pt-7">
               <div className="overflow-y-auto h-full">
-                <p
+                <pre
                   className={`
                   ${numPregunta < preguntas.length - 1 && "max-w-lg"}
-                  text-gray-100 mb-4 text-base base:text-xl mt-8 `}>
+                  text-gray-100 mb-4 text-base base:text-xl mt-8 whitespace-pre-wrap
+    break-words font-onest`}>
                   {numPregunta + 1}. {pregunta}
-                </p>
+                </pre>
               </div>
             </div>
-            <p
+            <pre
               className={`
               ${numPregunta < preguntas.length - 1 && "max-w-lg"}
-              text-gray-100 base:hidden mb-4 text-base base:text-xl mt-8 `}>
+              text-gray-100 base:hidden mb-4 text-base base:text-xl mt-8 whitespace-pre-wrap
+    break-words font-onest`}>
               {numPregunta + 1}. {pregunta}
-            </p>
+            </pre>
           </div>
         </div>
 
@@ -209,11 +216,13 @@ const Informacion = ({
           {numPregunta >= preguntas.length - 1 && (
             <button
               className={`px-2 py-1 border-2 border-green-500 text-green-500 rounded-md hover:scale-105 transition-all duration-300 ${
-                language == "html"
+                language == "html" || language == "sql" || language == "txt"
                   ? "cursor-not-allowed text-gray-600 border-gray-600"
                   : ""
               }`}
-              disabled={language == "html"}
+              disabled={
+                language == "html" || language == "sql" || language == "txt"
+              }
               onClick={handleExecuteCode}>
               {loading ? (
                 <div className="flex justify-center w-[90px]">
@@ -238,7 +247,7 @@ const Informacion = ({
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
