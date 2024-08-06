@@ -23,14 +23,18 @@ const Recursos = () => {
   };
   
   return (
+
     <div className="relative w-auto bg-custom-degrad bg-dot font-onest">
       <div className="grid lg:grid-cols-2 contenedor">
         <div className="grid grid-row mt-5">
+
           <div className="titleresources">
             Recu<span style={{ color: "#607cf7" }}>rsos</span>
           </div>
         </div>
+
         <div className="flex justify-left ml-[1em] showorno mt-5">
+
           <img
             src={nerdImage}
             alt="nerdyface"
@@ -71,6 +75,7 @@ const Recursos = () => {
           <div class="grid grid-rows-1">
           <div className="showorno">
             <table className="text-sm text-left text-gray-500 bordered">
+
               <thead className="text-xs text-gray-50 uppercase bg-none">
                 <tr>
                   <th className="px-6 py-3 border-b border-r ">Acción</th>
@@ -108,17 +113,19 @@ const Recursos = () => {
             </table>
           </div>
           </div>
-          
+
           <div className="text-[1.0rem] font-bold text-white lg:text-[1.75rem] mt-10" id="section2">PENSAMIENTO ALGORÍTMICO</div>
         <p className="graltext text-justify">El pensamiento algorítmico es una habilidad que te permitirá resolver problemas de forma eficiente y efectiva, optmizar soluciones ya creadas o por crear, la innovación, entre otras.</p>
         <p class="text-white font-regular font-[1.25rem] text-justify">Antes de adentrarnos en el tema, definamos un algoritmo. Un algoritmo es una secuencia finita de instrucciones claras y precisas, diseñadas para resolver un problema específico. El pensamiento algorítmico implica la capacidad de descomponer un problema en pasos más pequeños, identificar patrones y diseñar una secuencia lógica de acciones para alcanzar una solución.</p>
         <div class="text-white font-semibold text-[1.45rem] mt-5">Importancia del pensamiento algorítmico</div>
       <ul class="ps-5 mt-2 space-y-1 list-disc list-inside text-white text-justify">
+
          <li>Informática: Base de la programación, desde simples cálculos hasta inteligencia artificial.</li>
          <li>Matemáticas: Diseño de algoritmos para resolver ecuaciones, optimizar procesos, etc.</li>
          <li>Ingeniería: Automatización de procesos industriales, diseño de sistemas embebidos.</li>
          <li>Ciencias de la computación: Desarrollo de software, análisis de datos, aprendizaje automático.</li>
       </ul>
+
 
 <div id="section3" className="text-[1.0rem] font-bold text-white lg:text-[1.75rem] mt-12">PÁGINAS PARA PRACTICAR</div>
 <div class="graltext">Aquí te dejamos una lista de páginas web que te ayudarán a practicar y mejorar tus habilidades de programación.</div>
@@ -127,6 +134,7 @@ const Recursos = () => {
 </p>
 <div class="grid grid-rows-1 mt-7">
   <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
+
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
         <a href="https://visualgo.net/en">
@@ -160,7 +168,9 @@ const Recursos = () => {
 </div>
 
 <div class="grid grid-rows-1 mt-10">
+
   <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
+
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
       <a href="https://codeforces.com/">
@@ -193,11 +203,13 @@ const Recursos = () => {
     </div>
   </div>
 </div>
+
 <p id="section5" class="mt-5 text-[1.2rem] font-semibold text-white lg:text-[1.5rem]">
   Front-end
 </p>
 <div class="grid grid-rows-1 mt-7">
   <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
+
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
         <a href="https://www.frontendmentor.io/">
@@ -214,7 +226,9 @@ const Recursos = () => {
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
       <div class="p-8">
+
         <a href="https://css-tricks.com/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">CSS-Tricks</h5>
         </a>
@@ -231,9 +245,11 @@ const Recursos = () => {
 </div>
 
 <div class="grid grid-rows-1 mt-10">
+
   <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-8">
+
         <a href="https://javascript30.com/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">JavaScript30</h5>
         </a>
@@ -267,7 +283,9 @@ const Recursos = () => {
   Back-end
 </p>
 <div class="grid grid-rows-1 mt-10">
+
   <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
+
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
         <a href="https://www.theodinproject.com/">
@@ -284,7 +302,9 @@ const Recursos = () => {
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
       <div class="p-8">
+
         <a href="https://codesignal.com/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">CodeSignal</h5>
         </a>
@@ -301,9 +321,11 @@ const Recursos = () => {
 </div>
 
 <div class="grid grid-rows-1 mt-10">
+
   <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-8">
+
         <a href="https://exercism.org/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Exercism</h5>
         </a>
@@ -318,7 +340,9 @@ const Recursos = () => {
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
       <div class="p-4">
+
         <a href="https://www.hackerrank.com/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">HackerRank: </h5>
         </a>
@@ -333,11 +357,13 @@ const Recursos = () => {
     </div>
   </div>
 </div>
+
 <p id="section7" class="mt-5 text-[1.2rem] font-semibold text-white lg:text-[1.5rem]">
   Fullstack
 </p>
 <div class="grid grid-rows-1 mt-10">
   <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
+
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
         <a href="https://www.freecodecamp.org/">
@@ -355,6 +381,7 @@ const Recursos = () => {
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-[1.65em]">
+
         <a href="https://www.theodinproject.com/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">The Odin Project</h5>
         </a>
@@ -371,7 +398,9 @@ const Recursos = () => {
 </div>
 
 <div class="grid grid-rows-1 mt-10">
+
   <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
+
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
         <a href="https://www.udemy.com/es/">
@@ -455,9 +484,11 @@ Las habilidades blandas son el pegamento que une a las personas y a los equipos.
 
 
         </div>  
+
         </div>
       </div>
       </div>
+
   );
 };
 
