@@ -25,12 +25,12 @@ const Recursos = () => {
   return (
     <div className="relative w-auto bg-custom-degrad bg-dot font-onest">
       <div className="grid lg:grid-cols-2 contenedor">
-        <div className="grid grid-row">
+        <div className="grid grid-row mt-5">
           <div className="titleresources">
             Recu<span style={{ color: "#607cf7" }}>rsos</span>
           </div>
         </div>
-        <div className="flex justify-left ml-[1em] showorno">
+        <div className="flex justify-left ml-[1em] showorno mt-5">
           <img
             src={nerdImage}
             alt="nerdyface"
@@ -126,7 +126,7 @@ const Recursos = () => {
   Software development
 </p>
 <div class="grid grid-rows-1 mt-7">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+  <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
         <a href="https://visualgo.net/en">
@@ -160,7 +160,7 @@ const Recursos = () => {
 </div>
 
 <div class="grid grid-rows-1 mt-10">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+  <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
       <a href="https://codeforces.com/">
@@ -197,7 +197,7 @@ const Recursos = () => {
   Front-end
 </p>
 <div class="grid grid-rows-1 mt-7">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+  <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
         <a href="https://www.frontendmentor.io/">
@@ -214,7 +214,7 @@ const Recursos = () => {
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <div class="p-5">
+      <div class="p-8">
         <a href="https://css-tricks.com/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">CSS-Tricks</h5>
         </a>
@@ -231,9 +231,9 @@ const Recursos = () => {
 </div>
 
 <div class="grid grid-rows-1 mt-10">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+  <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <div class="p-5">
+      <div class="p-8">
         <a href="https://javascript30.com/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">JavaScript30</h5>
         </a>
@@ -267,7 +267,7 @@ const Recursos = () => {
   Back-end
 </p>
 <div class="grid grid-rows-1 mt-10">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+  <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
         <a href="https://www.theodinproject.com/">
@@ -284,7 +284,7 @@ const Recursos = () => {
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <div class="p-5">
+      <div class="p-8">
         <a href="https://codesignal.com/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">CodeSignal</h5>
         </a>
@@ -301,9 +301,9 @@ const Recursos = () => {
 </div>
 
 <div class="grid grid-rows-1 mt-10">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+  <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <div class="p-5">
+      <div class="p-8">
         <a href="https://exercism.org/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Exercism</h5>
         </a>
@@ -318,7 +318,7 @@ const Recursos = () => {
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <div class="p-5">
+      <div class="p-4">
         <a href="https://www.hackerrank.com/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">HackerRank: </h5>
         </a>
@@ -337,7 +337,7 @@ const Recursos = () => {
   Fullstack
 </p>
 <div class="grid grid-rows-1 mt-10">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+  <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
         <a href="https://www.freecodecamp.org/">
@@ -354,7 +354,7 @@ const Recursos = () => {
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <div class="p-5">
+      <div class="p-[1.65em]">
         <a href="https://www.theodinproject.com/">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">The Odin Project</h5>
         </a>
@@ -371,7 +371,7 @@ const Recursos = () => {
 </div>
 
 <div class="grid grid-rows-1 mt-10">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+  <div class="grid grid-cols-1 grid lg:grid-cols-2 grid md:grid-cols-2 gap-4 items-center">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5">
         <a href="https://www.udemy.com/es/">
