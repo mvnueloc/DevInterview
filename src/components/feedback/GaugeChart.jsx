@@ -29,7 +29,7 @@ const GaugeChart = ({height = 350, data = 0, title = "empty", popover="popover-d
         endAngle: 135,
         dataLabels: {
           name: {
-            fontSize: '16px',
+            fontSize: '13px',
             color: "#fff",
             offsetY: -15
           },
