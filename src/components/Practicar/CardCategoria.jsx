@@ -5,7 +5,7 @@ const CardCategoria = (props) => {
     <div
       className={`w-5/6  md:w-[340px] base:w-[388px] transition-opacity duration-200`}>
       <div
-        className={`bg-gradient-to-b from-[#46484e] to-[#28292C] text-white rounded-md px-6 py-8 cursor-pointer hover:shadow-md hover:shadow-secundary/50 ${
+        className={`bg-gradient-to-b from-[#46484e] to-[#28292C] text-white rounded-md px-6 py-8 cursor-pointer hover:shadow-md hover:shadow-gray-600/50 ${
           props.disabled ? "opacity-50 cursor-not-allowed" : ""
         }  hover:scale-105 transition-all duration-400`}
         onClick={!props.disabled ? props.onSelect : undefined}>
