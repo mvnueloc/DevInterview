@@ -7,7 +7,7 @@ import GithutIcon from "../icons/Github";
 
 const navbarLinks = [
   { label: "Inicio", href: "/", ariaLabel: "Inicio" },
-  { label: "Prácticar", href: "/practicar", ariaLabel: "Practicar" },
+  { label: "Practicar", href: "/practicar", ariaLabel: "Practicar" },
   { label: "Recursos", href: "/recursos", ariaLabel: "Recursos" },
 ];
 
@@ -53,10 +53,10 @@ function Header() {
             ))}
           </div>
           <div className="inline-flex items-center gap-4 pl-16">
-            <a href="">
+            <a href="https://discord.gg/qq5skv87Sw">
               <DiscordIcon className="size-6" />
             </a>
-            <a href="">
+            <a href="https://github.com/mvnueloc/DevInterview">
               <GithutIcon className="size-6" />
             </a>
           </div>
