@@ -29,11 +29,9 @@ async function generarRespuestaCode(prompt) {
       prompt: prompt,
     });
 
-    console.log(response.text);
+    // console.log(response.text);
     return response.text;
-
   } catch (error) {
-    
     console.error("Error al procesar la respuesta:", error);
     return "error-response";
   }

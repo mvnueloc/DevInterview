@@ -17,12 +17,13 @@ const languageMap = {
   csharp: "csharp",
   php: "php",
   html: "xml",
+  sql: "sql",
+  txt: "txt",
   // Agrega más lenguajes según sea necesario
 };
 
 const ResumenPreguntas = ({ data, questions, language }) => {
   const markdownLanguage = languageMap[language] || "plaintext";
-  console.log(questions);
 
   return (
     <SkeletonTheme baseColor="#202020" highlightColor="#444">
