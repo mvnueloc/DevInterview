@@ -13,6 +13,8 @@ const LanguajesSelector = ({ language, onSelect }) => {
     csharp: "6.12.0",
     php: "8.2.3",
     html: "5",
+    sql: "8.0.23",
+    txt: "1.0.0",
   };
 
   const languages = Object.entries(LANGUAGE_VERSIONS);

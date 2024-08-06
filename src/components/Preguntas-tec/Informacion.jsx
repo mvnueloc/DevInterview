@@ -216,11 +216,13 @@ const Informacion = ({
           {numPregunta >= preguntas.length - 1 && (
             <button
               className={`px-2 py-1 border-2 border-green-500 text-green-500 rounded-md hover:scale-105 transition-all duration-300 ${
-                language == "html"
+                language == "html" || language == "sql" || language == "txt"
                   ? "cursor-not-allowed text-gray-600 border-gray-600"
                   : ""
               }`}
-              disabled={language == "html"}
+              disabled={
+                language == "html" || language == "sql" || language == "txt"
+              }
               onClick={handleExecuteCode}>
               {loading ? (
                 <div className="flex justify-center w-[90px]">
