@@ -3,6 +3,7 @@ import { feedbackContext } from './feedbackContext';
 
 const StateFeedback = ({ children }) => {
     const [feedback, setFeedback] = useState("none");
+    const [feedbackCode, setFeedbackCode] = useState("none");
 
     const setLoadingFeedback = () => {
         console.log("setLoadingFeedback");
@@ -19,16 +20,31 @@ const StateFeedback = ({ children }) => {
         setFeedback("done");
     }
 
-    const getFeedback = () => {
-        return feedback;
+    const setLoadingCode = () => {
+        console.log("setLoadingFeedbackCode");
+        setFeedbackCode("loading");
+    }
+
+    const setErrorCode = () => {
+        console.log("setErrorFeedbackCode");
+        setFeedbackCode("error");
+    }
+
+    const setDoneCode = () => {
+        console.log("setDoneFeedbackCode");
+        setFeedbackCode("done");
     }
 
     return (
         <feedbackContext.Provider value = {{
             feedback,
+            feedbackCode,
             setLoadingFeedback,
             setErrorFeedback,
-            setDoneFeedback
+            setDoneFeedback,
+            setLoadingCode,
+            setErrorCode,
+            setDoneCode
         }}>
             { children }
         </feedbackContext.Provider>

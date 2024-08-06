@@ -1,4 +1,6 @@
 import CrossIcon from '../icons/Cross';
+import ReactMarkdown from 'react-markdown';
+
 const BulletPoints = ({ points }) => {
     return (
         <ul className="w-full">
@@ -7,7 +9,7 @@ const BulletPoints = ({ points }) => {
                     <div className='w-3'>
                         <CrossIcon className="size-3 mt-1.5" color="#FF0000" />
                     </div>
-                    {point}
+                    <ReactMarkdown>{ point }</ReactMarkdown>
                 </li>
             ))}
         </ul>
