@@ -185,20 +185,22 @@ const Informacion = ({
           <div className="base:flex-1 relative">
             <div className="hidden inset-0 overflow-hidden base:block base:absolute py-4 pt-7">
               <div className="overflow-y-auto h-full">
-                <p
+                <pre
                   className={`
                   ${numPregunta < preguntas.length - 1 && "max-w-lg"}
-                  text-gray-100 mb-4 text-base base:text-xl mt-8 `}>
+                  text-gray-100 mb-4 text-base base:text-xl mt-8 whitespace-pre-wrap
+    break-words font-onest`}>
                   {numPregunta + 1}. {pregunta}
-                </p>
+                </pre>
               </div>
             </div>
-            <p
+            <pre
               className={`
               ${numPregunta < preguntas.length - 1 && "max-w-lg"}
-              text-gray-100 base:hidden mb-4 text-base base:text-xl mt-8 `}>
+              text-gray-100 base:hidden mb-4 text-base base:text-xl mt-8 whitespace-pre-wrap
+    break-words font-onest`}>
               {numPregunta + 1}. {pregunta}
-            </p>
+            </pre>
           </div>
         </div>
 
