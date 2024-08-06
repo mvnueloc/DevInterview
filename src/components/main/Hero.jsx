@@ -39,7 +39,7 @@ const Hero = () => {
           <Link
             to="/practicar"
             className="bg-[#4545E6] hover:shadow-lg hover:shadow-[#4545E6]/50 hover:scale-105 transition-all duration-500 px-6 pt-[14px] pb-3 rounded text-sm font-medium neon-shadow">
-            Prácticar
+            Practicar
           </Link>
           <a
             href="https://github.com/mvnueloc/DevInterview"

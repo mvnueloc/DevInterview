@@ -13,10 +13,10 @@ function Footer () {
                     <a href="" className="text-sm">Términos</a>
                 </nav>
                 <div className="flex justify-center space-x-6">
-                    <a href="https://github.com/mvnueloc">
+                    <a href="https://github.com/mvnueloc/DevInterview">
                         <Github className="size-5"/>
                     </a>
-                    <a href="https://discord.gg/usrKrRw966">
+                    <a href="https://discord.gg/qq5skv87Sw">
                         <Discord className="size-7"/>
                     </a>
                 </div>
